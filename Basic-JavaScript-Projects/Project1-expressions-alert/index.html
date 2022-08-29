@@ -1,8 +1,12 @@
+<!--PROJECT1 EXPRESSIONS-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Intro to Super Basic JavaScript</title>
+    <!--RUN JAVASCRIPT THAT IS IN A .js FILE-->
+    <script src="./js/main.js"></script>
+    <title>Project1 Expressions</title>
 </head>
 <body>
     <!--Run Basic JavaScript by using <script> tags-->
@@ -19,8 +23,6 @@
     </script>
     -->
 
-    <!--RUN JAVASCRIPT THAT IS IN A .js FILE-->
-    <script src="./js/main.js"></script>
 
     <!--DISPLAY TEXT USING A VARIABLE-->
     <script>
@@ -29,7 +31,9 @@
     </script>
     <br>
     <br>
-    <h2>Special Characters with \ backslashes and concatenation:</h2>
+
+    <!--CONCATENATE-->
+    <h2>Special Characters with \ backslashes & Concatenation:</h2>
     <script>
         document.write("Sometimes, you need to add extra characters like: \"So says everyone!\"" //Backslash added before "" to mark that it's a special character
         + " And the backslash \(\\\) tells JavaScript that what follows is just that.") //Use two backslash to display one.
@@ -42,6 +46,9 @@
     <script>
         document.write(Sent1+Sent2);
     </script>
+    <div>
+        <p id="concatenate" onclick = "myfunction()">Click Here! for more concatenation!</p>
+    </div>
 
 
     <!--DEFINE MULTIPLE VARIABLES WITH ,:-->
@@ -53,9 +60,9 @@
 
     <!--EXPRESSIONS & STATEMENTS:-->
     <h2>Expressions & Statements:</h2>
-    <p>In computers, an <b>expression</b> is a combination of values that are computed by the computer. There are different ways to write out expressions depending on which language you are programming in. For example: Name = “What the person types in the name box” could be an expression. Also, x + 5 is an expression. In JavaScript, an expression results in a value. There are basically two types of expressions: ones that have a value (or result in a value) and ones that assign a value to a variable. 
+    <p>In computers, an <strong>expression</strong> is a combination of values that are computed by the computer. There are different ways to write out expressions depending on which language you are programming in. For example: Name = “What the person types in the name box” could be an expression. Also, x + 5 is an expression. In JavaScript, an expression results in a value. There are basically two types of expressions: ones that have a value (or result in a value) and ones that assign a value to a variable. 
         <br>
-        <b>Statements</b> are computer instructions. In JavaScript, a statement performs a task – a program is basically a series of statements.  These are the instructions that are used by people as they create computer programs. The simplest of these might be things like “print,” “delete,” “add,” “multiply,” etc. A statement may contain an expression. Statements are separated by semicolons ;.
+        <strong>Statements</strong> are computer instructions. In JavaScript, a statement performs a task – a program is basically a series of statements.  These are the instructions that are used by people as they create computer programs. The simplest of these might be things like “print,” “delete,” “add,” “multiply,” etc. A statement may contain an expression. Statements are separated by semicolons ;.
         <br>See:</br>
     </p>
     <script>
@@ -69,6 +76,30 @@
             Click me!
         </button>
         <!--In this HTML code, we created a button element. We then utilized the ID attribute and assigned the button element the value “Button_Text.”The button element was also given an event handler which is used to call the JavaScript function “My_First_Function().” The onclick event handler is triggered when the user clicks on that element.   -->
+    </div>
+    <br>
+
+    <!--HTML OPTGROUP TAG FOR CONFIGURABLE DROPDOWN LIST-->
+    <div>
+        <div>
+            <h2>Optgroup tag for configurable dropdown list:</h2>
+            <form action="/action_page.php">
+                <label for="Inventory Items">Choose a category of items:</label>
+                <select name="Inventory" id="inventory">
+                    <optgroup label="Closures">
+                        <option value="Zippers">Zippers</option>
+                        <option value="Buttons">Buttons</option>
+                        <option value="Snaps">Snaps</option>
+                    </optgroup>
+                    <optgroup label="Fabric">
+                        <option value="Lining">Lining</option>
+                        <option value="Outerwear">Outerwe</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
 </body>
 </html>
