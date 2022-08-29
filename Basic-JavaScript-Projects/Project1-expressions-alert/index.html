@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Intro to Super Basic JavaScript</title>
+</head>
+<body>
+    <!--Run Basic JavaScript by using <script> tags-->
+    <!--
+    <script>
+        alert("Hello, World! This displays a popup with an okay button to clear it");
+    </script>
+    -->
+
+    <!--WINDOW.ALERT-->
+    <!--
+    <script>
+        window.alert("Hello to the world in the window...This is another popup with an okay button to clear it")
+    </script>
+    -->
+
+    <!--RUN JAVASCRIPT THAT IS IN A .js FILE-->
+    <script src="./js/main.js"></script>
+
+    <!--DISPLAY TEXT USING A VARIABLE-->
+    <script>
+        document.write(A);
+        document.write(B);
+    </script>
+    <br>
+    <br>
+    <h2>Special Characters with \ backslashes and concatenation:</h2>
+    <script>
+        document.write("Sometimes, you need to add extra characters like: \"So says everyone!\"" //Backslash added before "" to mark that it's a special character
+        + " And the backslash \(\\\) tells JavaScript that what follows is just that.") //Use two backslash to display one.
+    </script> <!--The + serves to concatenate the string, displaying it on the same line-->
+    <br>
+    <script>
+        document.write(BB);
+    </script>
+    <br>
+    <script>
+        document.write(Sent1+Sent2);
+    </script>
+
+
+    <!--DEFINE MULTIPLE VARIABLES WITH ,:-->
+    <h2>Define multiple variables:</h2>
+    <p>Print all the pets in the family by calling multiple defined variables.
+        <br>Our pets: <script>document.write(cat, dog, fish)</script> are all the best! <!--Call multiple variables-->
+        <br>But <script>document.write(cat)</script> is my favorite!
+    </p>
+
+    <!--EXPRESSIONS & STATEMENTS:-->
+    <h2>Expressions & Statements:</h2>
+    <p>In computers, an <b>expression</b> is a combination of values that are computed by the computer. There are different ways to write out expressions depending on which language you are programming in. For example: Name = “What the person types in the name box” could be an expression. Also, x + 5 is an expression. In JavaScript, an expression results in a value. There are basically two types of expressions: ones that have a value (or result in a value) and ones that assign a value to a variable. 
+        <br>
+        <b>Statements</b> are computer instructions. In JavaScript, a statement performs a task – a program is basically a series of statements.  These are the instructions that are used by people as they create computer programs. The simplest of these might be things like “print,” “delete,” “add,” “multiply,” etc. A statement may contain an expression. Statements are separated by semicolons ;.
+        <br>See:</br>
+    </p>
+    <script>
+        document.write(3+3); //This is a STATEMENT with the EXPRESSION (3+3)
+    </script>
+
+    <!--FUNCTIONS-->
+    <div>
+        <h2>Basic Function: </h2>
+        <button onclick="My_First_Function()" id="Button_Text">
+            Click me!
+        </button>
+        <!--In this HTML code, we created a button element. We then utilized the ID attribute and assigned the button element the value “Button_Text.”The button element was also given an event handler which is used to call the JavaScript function “My_First_Function().” The onclick event handler is triggered when the user clicks on that element.   -->
+    </div>
+</body>
+</html>
