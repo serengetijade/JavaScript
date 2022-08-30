@@ -29,7 +29,6 @@ function thankyounote() { //Display text after clicking submit in the p element 
 }
 
 //MATH WITH JS
-
 function addition_function() { //Addition operator +
     var  addition = 2+2;
     document.getElementById("math").innerHTML="2 + 2 = " + addition;
@@ -57,6 +56,20 @@ function modulus_operator() {
 function negation_operator() {
     var x = 10;
     document.getElementById("math7").innerHTML= "The negative of 10 is: " + -x;
+}
+//END MATH WITH JS
+
+//BASIC DICTIONARY
+function my_dictionary() {
+	var Animal= {
+		Species:"Dog",  //There are NO SPACEs after the :colon.
+		Color:"Black",  //String values go within quotes. 
+        Breed:"Labrador",
+        Age:5,          //Integers do NOT need quotes
+        Sound:"Woof!"
+    };
+    //delete Animal.Sound; //The delete command removes a KVP, would return "undefined" result.
+    document.getElementById("Dictionary").innerHTML=Animal.Sound; //JS is case specific, so if variables are upper/lowercase they must be the same EVERYWHERE!
 }
 
 
