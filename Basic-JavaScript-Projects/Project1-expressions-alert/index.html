@@ -6,6 +6,9 @@
     <title>Project1 Expressions</title>
 </head>
 <body>
+        <!--RUN JAVASCRIPT THAT IS IN A .js FILE-->
+        <script src="js/project1main.js"></script>
+
     <!--Run Basic JavaScript by using <script> tags-->
     <!--
     <script>
@@ -19,21 +22,26 @@
         window.alert("Hello to the world in the window...This is another popup with an okay button to clear it")
     </script>
     -->
+    
+    <h1>WELCOME TO BASIC JAVASCRIPT</h1>
 
     <!--DISPLAY TEXT USING A VARIABLE-->
     <script>
         document.write(A);
         document.write(B);
-    </script>
-    <br>
+    </script
     <br>
 
-    <!--CONCATENATE-->
-    <h2>Special Characters with \ backslashes & Concatenation:</h2>
+    <!--CONCATENATE--> 
+    <h2>Special Characters with \ Backslashes & + Concatenation:</h2>
+    
+    <!--The + serves to concatenate the string, displaying it on the same line-->
     <script>
         document.write("Sometimes, you need to add extra characters like: \"So says everyone!\"" //Backslash added before "" to mark that it's a special character
-        + " And the backslash \(\\\) tells JavaScript that what follows is just that.") //Use two backslash to display one.
-    </script> <!--The + serves to concatenate the string, displaying it on the same line-->
+        + "<br>" +                                                                               //+ "<br>" + adds a line break into javascript strings
+        "And the backslash \(\\\) tells JavaScript that what follows is just that.");            //Use two backslash \\ to display one.
+    </script> 
+    
     <script>
         document.write(BB);
     </script>
@@ -41,16 +49,16 @@
     <script>
         document.write(Sent1+Sent2);
     </script>
+
     <div>
         <p id="concatenate" onclick = "myfunction()">Click Here! for more concatenation!</p>
     </div>
 
-
     <!--DEFINE MULTIPLE VARIABLES WITH ,:-->
-    <h2>Define multiple variables:</h2>
-    <p>Print all the pets in the family by calling multiple defined variables.
-        <br>Our pets: <script>document.write(cat, dog, fish)</script> are all the best! <!--Call multiple variables-->
-        <br>But <script>document.write(cat)</script> is my favorite!
+    <h2>Define multiple variables with , (commas):</h2>
+    <p>Print all the pets in the family by calling multiple defined variables:
+        <br>Our pets: <script>document.write(cat + ", " + dog + ", and " + fish);</script> are all the best! <!--Call multiple variables-->
+        <br>But <script>document.write(cat);</script> is my favorite!
     </p>
 
     <!--EXPRESSIONS & STATEMENTS:-->
@@ -68,6 +76,12 @@
             document.write(3+3); //This is a STATEMENT with the EXPRESSION (3+3)
         </script>
         <br>
+        <p>If you try to add different data types, javascript will choose one. This is <strong>type coersion</strong>
+        <br>For example: document.write("10"+5); yields 
+        <script>
+            document.write("10"+5);
+        </script>
+        </p>
     </div>
 
     <div>
@@ -92,10 +106,10 @@
         <p id="math" onmouseover="addition_function()">Math is fun!</p>
         <p id="math2" onmouseover="subtraction_function()">Yay math</p>
         <p id="math3" onclick="multiplication()">Multiplication operator- click!</p>
-        <p id="math4" onclick="division()">Division operator-click!</p>
-        <p id="math5" onclick="multiple_math()">You can do multiple math operations in one function.</p>
-        <p id="math6" onclick="modulus_operator()">Modulus operator: 25 % 6</p>
-        <p id="math7" onclick="negation_operator()">Negation operators return the negative.</p>
+        <p id="math4" onclick="division()">Division operator- click!</p>
+        <p id="math5" onclick="multiple_math()">You can do multiple math operations in one function- click!</p>
+        <p id="math6" onclick="modulus_operator()">Modulus operator: 25 % 6 -click!</p>
+        <p id="math7" onclick="negation_operator()">Negation operators return the negative- click!</p>
     </div>
     <!--INCREMENT AND DECREMENT OPERATORS-->
     <p>Increment:
@@ -130,14 +144,113 @@
         </script>
         .
     </p>
+    <!--UNIQUE MATH VALUES-->
+    <p>What happens when you divide 0 by 0? &rarr; <span id="Test" onclick="my_Function()">Click here for unique math values!</span></p>
+    <!--isNAN test. Result=true-->
+    <p>Check whether or not something is a number by using the isNaN() function: <span id="Test2">Result?</span>
+        <script>document.getElementById("Test2").innerHTML = isNaN('This is a string');</script> 
+    </p>
+    <!--isNAN test. Result=false-->
+    <p>Check whether or not something else is a number: <span id="Test3">Result?</span>
+        <script>document.getElementById("Test3").innerHTML = isNaN('007');</script> 
+    </p>
+    <!--Infinity-->
+    <p>To display infinity AND BEYOND!: <script>document.write(2E310);</script></p> 
+    <p>To display negative infinity AND BEYOND!: <script>document.write(-2E310);</script></p> 
     <!--END MATH WITH JS-->
 
     <!--BASIC DICTIONARY-->
     <h2>Dictionaries:</h2>
     <p id="Dictionary" onclick="my_dictionary()">Click me to see the dictionary key's value pair!</p>
+    <!--END BASIC DICTOINARY-->
 
+    <!--OPERATORS-->
+    <!--TYPE OF OPERATOR-->
+    <h2>typeof</h2>
+    <p>Will result in the data/object <a href="https://www.w3schools.com/js/js_typeof.asp">type of</a> whatever follows it</p>
+    <script>
+        document.write(typeof "Word"); //typeof will result in "string"
+    </script>
+    <br>
+    <script>
+        document.write(typeof 523);     //typeof will result in "number"
+    </script>
+    <!--END OPERATORS-->
 
-    <!--RUN JAVASCRIPT THAT IS IN A .js FILE-->
-    <script src="./js/project1main.js"></script>
+    <!--COMPARISONS & BOOLEAN LOGIC-->
+    <h2>Comparisons & Boolean True or False Statements:</h2>
+    <p>Boolean logic uses <a href="https://www.w3schools.com/js/js_comparisons.asp">operators</a> to compare statements. </p>
+    <p>10 > 3 ? Result: 
+        <script>document.write(10 > 3);</script>
+    </p>
+    <p>20 < 3 ? Result: 
+        <script>document.write(20 < 3);</script>
+    </p>
+    <!--EQUALITY OPERATOR-->
+    <p>Double equal signs == check for equality, and yield true or false 
+        <br>10 == 10? 
+            <script>document.write(10==10);</script> <!--== check for equality, and yield true or false -->
+        <br>3 == 11? 
+            <script>document.write(3==11);</script>
+    </p>
+    <!--VALUE AND TYPE OPERATOR-->
+    <p>The === (triple equal sign) compares VALUE and TYPE. The answer to this comparison is an answer of “true” or “false.”
+        <br>For example: 
+        <br>variable xxx === variable yyy? Result: 
+            <script>
+                xxx=10;
+                yyy=10;
+                document.write(xxx===yyy);  //=== makes a comparison of VALUE and TYPE and yields "true" or "false"
+            </script>
+        <br> or 82 === "82"? Result:
+            <script>
+                www=82;
+                zzz="81";
+                document.write(www===zzz);
+            </script>
+    </p>
+    <!--AND OPERATOR-->
+    <p>&& The operator to verify if one comparison AND another comparison are true. Both must be true to return “true.” If one or more is false, it returns “false.” 
+        <br>(5>2 && 10>4)? Result: 
+            <script>document.write(5>2 && 10>4);</script> <!--Because both statements are true.-->
+        <br>(5>10 && 10>3)? Result:
+            <script>document.write(5>10 && 10>3);</script> <!--Because the first statement is false, the comparison returns "false".-->
+    </p>
+    <!--OR OPERATOR-->
+    <p>|| determines if AT LEAST one comparison or another comparison are true. Either must be true to return “true.” If both are false, it returns “false.”
+        <br>(5>10 || 10>4)? Result:
+            <script>document.write(5>10 || 10>4);</script> <!--Because the second statment is true-->
+        <br>(5>10 || 10>20)? Result: 
+            <script>document.write(5>10 || 10>20);</script> <!--Because neither statment is true, the comparison returns "false".-->
+    </p>
+    <!--NOT OPERATOR-->
+    <p>! the NOT operator- it checks for falsehood. If a statement is false, it will return the value of “true”. If a statement is true, it will return “false.” 
+        <br><span id="not" onclick="not_function()">Click here to see if !(20>10)</span>
+            <script>function not_function() {
+                document.getElementById("not").innerHTML = !(20>10)
+            }
+            </script>
+        <br>(!(5>10))? Result: 
+            <script>
+                document.write(!(5>10)) //Because this is a double negative, it returns "true"
+            </script>
+    </p>
+    <!--END COMPARISONS & BOOLEAN LOGIC-->
+
+    <!--CONSOLE.LOG-->
+    <H2>Console.log()</H2>
+    <p>The console.log is a great way to troubleshoot. Access it via: 
+        <br>
+        <ul>
+            <li>f12</li>
+            <li>three upright dots in the top-right of the browser and then “More tools > Developer tools” and then click “Console”</li>
+            <li>Ctrl+Shift+I and then click on “Console.”</li>
+        </ul>
+    </p>
+    <p>Display the result of math operation with JS: see the console</p>
+    <script>console.log(2+2);</script>
+    <script>console.log(8>10);</script>
+    <!--END CONSOLE.LOG-->
+
 </body>
 </html>

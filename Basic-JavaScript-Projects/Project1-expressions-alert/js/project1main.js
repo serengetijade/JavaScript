@@ -1,11 +1,12 @@
 //PROJECT1 EXPRESSIONS
 alert("Hello again, World");
 
-var A=("This is a string- data that represents text."); //define variables with =
+//DISPLAY TEXT USING A VARIABLE
+var A=("This is a string- data that represents text. "); //define variables with =
 
 var B=("Variables are a useful way to reference data with JavaScript.");
 
-//CONCATENATION
+//CONCATENATE
 var BB= "Concatenated" + " strings display on the same line:"; //use + to concatenate strings
 var Sent1=("This is the beginning of the string ");  //and or use + in the function
 var Sent2=("and this is the end of the string.");
@@ -16,7 +17,7 @@ function myfunction() {
 }
 
 //DEFINE MULTIPLE VARIABLES
-var cat="Nemo", dog="Tuesday", fish="Krinklebine";  //define multiple variables
+var cat = "Nemo", dog = "Tuesday", fish = "Krinklebine";  //define multiple variables
 
 //BASIC FUNCTIONS
 function My_First_Function() { //Difine a function and naming it
@@ -57,6 +58,10 @@ function negation_operator() {
     var x = 10;
     document.getElementById("math7").innerHTML= "The negative of 10 is: " + -x;
 }
+//UNIQUE MATH VALUES
+function my_Function() {
+    document.getElementById("Test").innerHTML= 0/0;
+}
 //END MATH WITH JS
 
 //BASIC DICTIONARY
@@ -71,6 +76,7 @@ function my_dictionary() {
     //delete Animal.Sound; //The delete command removes a KVP, would return "undefined" result.
     document.getElementById("Dictionary").innerHTML=Animal.Sound; //JS is case specific, so if variables are upper/lowercase they must be the same EVERYWHERE!
 }
+//BOOLEAN LOGIC
 
 
 

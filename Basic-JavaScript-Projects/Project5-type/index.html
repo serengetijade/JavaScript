@@ -1,0 +1,106 @@
+<!--PROJECT5 TYPES-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="../CSS/" >
+	<link rel="icon" type="image/x-icon" href="../Images/Icons/">
+	<title>Project5 Types, Math, and Booleans</Title>
+		<style></style>
+	</head>
+	<body>
+		<header></header>
+		<nav></nav>
+		<main>
+            <!--TYPE OF OPERAATOR-->
+            <script>
+                document.write(typeof "Word");
+            </script>
+            <br>
+            <script>
+                document.write(typeof 523);
+            </script>
+
+            <!--TYPE COERSION-->
+            <p>If you try to add different data types, javascript will choose one. This is <strong>type coersion</strong>
+                <br>For example: document.write("10"+5); yields 
+                <script>
+                    document.write("10"+5);
+                </script>
+            </p>
+
+            <!--UNIQUE MATH VALUES-->
+            <p>What happens when you divide 0 by 0? &rarr; <span id="Test" onclick="my_Function()">Click here for unique math values!</span></p>
+            <!--isNAN test-->
+            <p>Check whether or not something is a number by using the isNaN() function: <span id="Test2">Result?</span>
+                <script>document.getElementById("Test2").innerHTML = isNaN('This is a string');</script>
+            </p>
+            <p>Check whether or not something else is a number: <span id="Test3">Result?</span>
+                <script>document.getElementById("Test3").innerHTML = isNaN('007');</script>
+            </p>
+            <!--Infinity-->
+            <p>To display infinity AND BEYOND!: <script>document.write(2E310);</script></p> 
+            <p>To display negative infinity AND BEYOND!: <script>document.write(-2E310);</script></p> 
+            
+            <!--BOOLEAN LOGIC-->
+            <h2>Boolean True or False Statements:</h2>
+            <p>10 > 3 ?: 
+                <script>document.write(10 > 3);</script>
+            </p>
+            <p>20 < 3 ?: 
+                <script>document.write(20 < 3);</script>
+            </p>
+
+            <p>Double equal signs == check for equality, and yield true or false 
+                <br>10 == 10? <script>document.write(10==10);</script>
+                <br>3 == 11? <script>document.write(3==11);</script>
+            </p>
+
+            <p>The === (triple equal sign) compares VALUE and TYPE. The answer to this comparison is an answer of “true” or “false.”
+                <br>For example: 
+                <br>variable xxx === variable yyy? 
+                    <script>
+                        xxx=10;
+                        yyy=10;
+                        document.write(xxx===yyy);  //=== makes a comparison and yields "true" or "false"
+                    </script>
+                <br> or 82 === "82"?
+                    <script>
+                        www=82;
+                        zzz="81";
+                        document.write(www===zzz);
+                    </script>
+            </p>
+
+            <p>&& The operator to verify if one comparison AND another comparison are true. Both must be true to return “true.” If one or more is false, it returns “false.” 
+                <br>(5>2 && 10>4)? Result: 
+                    <script>document.write(5>2 && 10>4);</script> <!--Because both statements are true.-->
+                <br>(5>10 && 10>3)? Result:
+                    <script>document.write(5>10 && 10>3);</script> <!--Because the first statement is false, the comparison returns "false".-->
+            </p>
+            <p>|| determines if AT LEAST one comparison or another comparison are true. Either must be true to return “true.” If both are false, it returns “false.”
+                <br>(5>10 || 10>4)? Result:
+                    <script>document.write(5>10 || 10>4);</script> <!--Because the second statment is true-->
+                <br>(5>10 || 10>20)? Result: 
+                    <script>document.write(5>10 || 10>20);</script> <!--Because neither statment is true, the comparison returns "false".-->
+            </p>
+            
+            <!--NOT OPERATOR-->
+            <p>! the NOT operator- it checks for falsehood. If a statement is false, it will return the value of “true”. If a statement is true, it will return “false.” 
+                <br><span id="not" onclick="not_function()">Click here to see if !(20>10)</span>
+                    <script>function not_function() {
+                        document.getElementById("not").innerHTML = !(20>10)
+                    }
+                    </script>
+                <br>(!(5>10))? Result: 
+                    <script>
+                        document.write(!(5>10)) //Because this is a double negative, it returns "true"
+                    </script>
+            </p>
+
+        </main>
+		<footer></footer>
+		<script src="JS/project4main.js"></script> <!--It's best practice to put this at the end of the body tag so that it doesn't slow loading-->
+	</body>
+</html>
