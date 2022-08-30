@@ -3,9 +3,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Intro to Super Basic JavaScript</title>
-    <!--RUN JAVASCRIPT THAT IS IN A .js FILE-->
-    <script src="./js/main.js"></script>
     <title>Project1 Expressions</title>
 </head>
 <body>
@@ -23,7 +20,6 @@
     </script>
     -->
 
-
     <!--DISPLAY TEXT USING A VARIABLE-->
     <script>
         document.write(A);
@@ -38,7 +34,6 @@
         document.write("Sometimes, you need to add extra characters like: \"So says everyone!\"" //Backslash added before "" to mark that it's a special character
         + " And the backslash \(\\\) tells JavaScript that what follows is just that.") //Use two backslash to display one.
     </script> <!--The + serves to concatenate the string, displaying it on the same line-->
-    <br>
     <script>
         document.write(BB);
     </script>
@@ -65,41 +60,80 @@
         <strong>Statements</strong> are computer instructions. In JavaScript, a statement performs a task – a program is basically a series of statements.  These are the instructions that are used by people as they create computer programs. The simplest of these might be things like “print,” “delete,” “add,” “multiply,” etc. A statement may contain an expression. Statements are separated by semicolons ;.
         <br>See:</br>
     </p>
-    <script>
-        document.write(3+3); //This is a STATEMENT with the EXPRESSION (3+3)
-    </script>
 
-    <!--FUNCTIONS-->
+    <!--BASIC FUNCTIONS-->
     <div>
-        <h2>Basic Function: </h2>
+        <h2>Basic Functions: </h2>
+        <script>
+            document.write(3+3); //This is a STATEMENT with the EXPRESSION (3+3)
+        </script>
+        <br>
+    </div>
+
+    <div>
         <button onclick="My_First_Function()" id="Button_Text">
             Click me!
         </button>
+        <br>
         <!--In this HTML code, we created a button element. We then utilized the ID attribute and assigned the button element the value “Button_Text.”The button element was also given an event handler which is used to call the JavaScript function “My_First_Function().” The onclick event handler is triggered when the user clicks on that element.   -->
     </div>
-    <br>
 
-    <!--HTML OPTGROUP TAG FOR CONFIGURABLE DROPDOWN LIST-->
-    <div>
-        <div>
-            <h2>Optgroup tag for configurable dropdown list:</h2>
-            <form action="/action_page.php">
-                <label for="Inventory Items">Choose a category of items:</label>
-                <select name="Inventory" id="inventory">
-                    <optgroup label="Closures">
-                        <option value="Zippers">Zippers</option>
-                        <option value="Buttons">Buttons</option>
-                        <option value="Snaps">Snaps</option>
-                    </optgroup>
-                    <optgroup label="Fabric">
-                        <option value="Lining">Lining</option>
-                        <option value="Outerwear">Outerwe</option>
-                    </optgroup>
-                </select>
-                <br><br>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+    <div> <!--DISPLAY TEXT AFTER CLICKING SUBMIT-->
+        <p>Click submit and it will show text. </p>
+        <input id="" type="submit" name="Submit" onclick="thankyounote()">
+        <p id="submitandshow"></p>
     </div>
+    <!--END BASIC FUNCTIONS-->
+
+    <!--MATH WITH JS-->
+    <h2>Basic Math Functions:</h2>
+    <!--ADDITION WITH CONCATENATE-->
+    <div>
+        <p id="math" onmouseover="addition_function()">Math is fun!</p>
+        <p id="math2" onmouseover="subtraction_function()">Yay math</p>
+        <p id="math3" onclick="multiplication()">Multiplication operator- click!</p>
+        <p id="math4" onclick="division()">Division operator-click!</p>
+        <p id="math5" onclick="multiple_math()">You can do multiple math operations in one function.</p>
+        <p id="math6" onclick="modulus_operator()">Modulus operator: 25 % 6</p>
+        <p id="math7" onclick="negation_operator()">Negation operators return the negative.</p>
+    </div>
+    <!--INCREMENT AND DECREMENT OPERATORS-->
+    <p>Increment:
+        <script>
+            var x=5;
+            x++;    //Increment operator
+            document.write(x);
+        </script>
+        <br>Decrement: 
+        <script>
+            var xx=5.25; 
+            xx--;   //Decrement operator
+            document.write(xx);
+        </script>
+    </p>
+    <!--RANDOM NUMBERS-->
+    <p>Random number between 0-1: 
+        <script>
+            document.write(Math.random());
+        </script>
+        <br>Random number between 0-100: 
+        <script>
+            document.write(Math.random()*100);
+        </script>
+    </p>
+    <!--MATH WITH .Math-->
+    <p> If the diameter of a circle is 40", 
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;the circumference is: 
+        <script>
+            var z = 40;
+            document.write(Math.PI * z);
+        </script>
+        .
+    </p>
+    <!--END MATH WITH JS-->
+
+
+    <!--RUN JAVASCRIPT THAT IS IN A .js FILE-->
+    <script src="./js/project1main.js"></script>
 </body>
 </html>

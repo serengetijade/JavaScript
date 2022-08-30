@@ -1,0 +1,65 @@
+<!--Project3 Math-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="../CSS/" >
+	<link rel="icon" type="image/x-icon" href="../Images/Icons/">
+	<title>Project3 Math</Title>
+		<style></style>
+	</head>
+	<body>
+		<header></header>
+		<nav></nav>
+		<main>
+            <!--MATH FUNCTIONS WITH CONCATENATE-->
+            <div>
+                <p id="math" onmouseover="addition_function()">Math is fun!</p>
+                <p id="math2" onmouseover="subtraction_function()">Yay math</p>
+                <p id="math3" onclick="multiplication()">Multiplication operator- click!</p>
+                <p id="math4" onclick="division()">Division operator-click!</p>
+                <p id="math5" onclick="multiple_math()">You can do multiple math operations in one function.</p>
+                <p id="math6" onclick="modulus_operator()">Modulus operator: 25 % 6</p>
+                <p id="math7" onclick="negation_operator()">Negation operators return the negative.</p>
+            </div>
+            <!--INCREMENT AND DECREMENT OPERATORS-->
+            <p>Increment:
+                <script>
+                    var x=5;
+                    x++;    //Increment operator
+                    document.write(x);
+                </script>
+            <br>Decrement: 
+                <script>
+                    var xx=5.25; 
+                    xx--;   //Decrement operator
+                    document.write(xx);
+                </script>
+            </p>
+            <!--RANDOM NUMBERS-->
+            <p>
+                Random number between 0-1: 
+                <script>
+                    document.write(Math.random());
+                </script>
+            <br>Random number between 0-100: 
+                <script>
+                    document.write(Math.random()*100);
+                </script>
+            </p>
+            <!--MATH WITH .Math-->
+            <p> If the diameter of a circle is 40", 
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;the circumference is: 
+                <script>
+                    var z = 40;
+                    document.write(Math.PI * z);
+                </script>
+                .
+            </p>
+
+        </main>
+		<footer></footer>
+		<script src="js/project3main.js"></script> <!--It's best practice to put this at the end of the body tag so that it doesn't slow loading-->
+	</body>
+	</html>
