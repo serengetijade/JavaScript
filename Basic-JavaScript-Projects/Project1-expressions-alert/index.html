@@ -164,6 +164,21 @@
     <p id="Dictionary" onclick="my_dictionary()">Click me to see the dictionary key's value pair!</p>
     <!--END BASIC DICTOINARY-->
 
+    <!--CONSOLE.LOG-->
+    <H2>Console.log()</H2>
+    <p>The console.log is a great way to troubleshoot. Access it via: 
+        <br>
+        <ul>
+            <li>f12</li>
+            <li>three upright dots in the top-right of the browser and then “More tools > Developer tools” and then click “Console”</li>
+            <li>Ctrl+Shift+I and then click on “Console.”</li>
+        </ul>
+    </p>
+    <p>Display the result of math operation with JS: see the console</p>
+    <script>console.log(2+2);</script>
+    <script>console.log(8>10);</script>
+    <!--END CONSOLE.LOG-->
+
     <!--OPERATORS-->
     <!--TYPE OF OPERATOR-->
     <h2>typeof</h2>
@@ -235,22 +250,36 @@
                 document.write(!(5>10)) //Because this is a double negative, it returns "true"
             </script>
     </p>
+    <!--TERNARY OPERATORS-->
+    <h3>Ternary operators <a href="https://www.w3schools.com/js/js_comparisons.asp">?</a></h3>
+    <p>Syntax: variablename = (condition) ? value1:value2 </p> <!--Remember that string values must be within "", but numbers do not-->
+    <p>for example: (Bigger=(5>1)? "Left number is bigger":"Right number is bigger"....
+        <br>Result:
+        <script>
+            document.write(Bigger=(5>1)? "Left number is bigger":"Right number is bigger");
+            //Value1 is used when condition is true
+            //Value2 is used when condition is false
+        </script>
+    </p>
+    <div>
+        <p>Here is a more complex example: 
+            <br>Riders must be at least 52 cm tall to ride.
+        </p>
+        <input id="Height" value="52" type="number" />
+        <button onclick="Ride_Function()">Click here!</button>
+        <p id="Ride"></p>
+        <script>
+            function Ride_Function() {
+                var Height, Can_ride;
+                Height = document.getElementById("Height").value;
+                Can_ride = (Height < 52)? "You are too short":"You are tall enough";
+                document.getElementById("Ride").innerHTML = Can_ride + " to ride.";
+            }
+        </script>
+    </div>
     <!--END COMPARISONS & BOOLEAN LOGIC-->
 
-    <!--CONSOLE.LOG-->
-    <H2>Console.log()</H2>
-    <p>The console.log is a great way to troubleshoot. Access it via: 
-        <br>
-        <ul>
-            <li>f12</li>
-            <li>three upright dots in the top-right of the browser and then “More tools > Developer tools” and then click “Console”</li>
-            <li>Ctrl+Shift+I and then click on “Console.”</li>
-        </ul>
-    </p>
-    <p>Display the result of math operation with JS: see the console</p>
-    <script>console.log(2+2);</script>
-    <script>console.log(8>10);</script>
-    <!--END CONSOLE.LOG-->
+
 
 </body>
 </html>
