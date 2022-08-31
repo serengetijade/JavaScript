@@ -7,7 +7,7 @@
 </head>
 <body>
         <!--RUN JAVASCRIPT THAT IS IN A .js FILE-->
-        <script src="js/project1main.js"></script>
+        <script src="js/project1main.js" defer></script>
 
     <!--Run Basic JavaScript by using <script> tags-->
     <!--
@@ -29,7 +29,7 @@
     <script>
         document.write(A);
         document.write(B);
-    </script
+    </script>
     <br>
 
     <!--CONCATENATE--> 
@@ -99,66 +99,6 @@
     </div>
     <!--END BASIC FUNCTIONS-->
 
-    <!--MATH WITH JS-->
-    <h2>Basic Math Functions:</h2>
-    <!--MATH WITH CONCATENATE-->
-    <div>
-        <p id="math" onmouseover="addition_function()">Math is fun!</p>
-        <p id="math2" onmouseover="subtraction_function()">Yay math</p>
-        <p id="math3" onclick="multiplication()">Multiplication operator- click!</p>
-        <p id="math4" onclick="division()">Division operator- click!</p>
-        <p id="math5" onclick="multiple_math()">You can do multiple math operations in one function- click!</p>
-        <p id="math6" onclick="modulus_operator()">Modulus operator: 25 % 6 -click!</p>
-        <p id="math7" onclick="negation_operator()">Negation operators return the negative- click!</p>
-    </div>
-    <!--INCREMENT AND DECREMENT OPERATORS-->
-    <p>Increment:
-        <script>
-            var x=5;
-            x++;    //Increment operator
-            document.write(x);
-        </script>
-        <br>Decrement: 
-        <script>
-            var xx=5.25; 
-            xx--;   //Decrement operator
-            document.write(xx);
-        </script>
-    </p>
-    <!--RANDOM NUMBERS-->
-    <p>Random number between 0-1: 
-        <script>
-            document.write(Math.random());
-        </script>
-        <br>Random number between 0-100: 
-        <script>
-            document.write(Math.random()*100);
-        </script>
-    </p>
-    <!--MATH WITH .Math-->
-    <p> If the diameter of a circle is 40", 
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;the circumference is: 
-        <script>
-            var z = 40;
-            document.write(Math.PI * z);
-        </script>
-        .
-    </p>
-    <!--UNIQUE MATH VALUES-->
-    <p>What happens when you divide 0 by 0? &rarr; <span id="Test" onclick="my_Function()">Click here for unique math values!</span></p>
-    <!--isNAN test. Result=true-->
-    <p>Check whether or not something is a number by using the isNaN() function: <span id="Test2">Result?</span>
-        <script>document.getElementById("Test2").innerHTML = isNaN('This is a string');</script> 
-    </p>
-    <!--isNAN test. Result=false-->
-    <p>Check whether or not something else is a number: <span id="Test3">Result?</span>
-        <script>document.getElementById("Test3").innerHTML = isNaN('007');</script> 
-    </p>
-    <!--Infinity-->
-    <p>To display infinity AND BEYOND!: <script>document.write(2E310);</script></p> 
-    <p>To display negative infinity AND BEYOND!: <script>document.write(-2E310);</script></p> 
-    <!--END MATH WITH JS-->
-
     <!--BASIC DICTIONARY-->
     <h2>Dictionaries:</h2>
     <p id="Dictionary" onclick="my_dictionary()">Click me to see the dictionary key's value pair!</p>
@@ -175,81 +115,145 @@
         </ul>
     </p>
     <p>Display the result of math operation with JS: see the console</p>
-    <script>console.log(2+2);</script>
-    <script>console.log(8>10);</script>
+    <script>console.log(2+2);</script>  <!--In the log, it shows what HTML line number this is logged on-->
+    <script>console.log(8>10);</script> <!--In the log, it shows what HTML line number this is logged on-->
     <!--END CONSOLE.LOG-->
 
     <!--OPERATORS-->
     <!--TYPE OF OPERATOR-->
-    <h2>typeof</h2>
-    <p>Will result in the data/object <a href="https://www.w3schools.com/js/js_typeof.asp">type of</a> whatever follows it</p>
+    <h2>typeof Operator</h2>
     <script>
-        document.write(typeof "Word"); //typeof will result in "string"
+        document.write(typeof "Word");
     </script>
     <br>
     <script>
-        document.write(typeof 523);     //typeof will result in "number"
+        document.write(typeof 523);
     </script>
-    <!--END OPERATORS-->
 
+    <!--TYPE COERSION-->
+    <p>If you try to add different data types, javascript will choose one. This is <strong>type coersion</strong>
+        <br>For example: document.write("10"+5); yields <span id="coersionresult"></span>
+    </p>
+
+    <!--MATH WITH JS-->
+    <h2>Basic Math Functions:</h2>
+    <!--MATH WITH CONCATENATE-->
+    <div>
+        <p id="math" onmouseover="addition_function()">Math is fun!</p>
+        <p id="math2" onmouseover="subtraction_function()">Yay math</p>
+        <p id="math3" onclick="multiplication()">Multiplication operator- click!</p>
+        <p id="math4" onclick="division()">Division operator- click!</p>
+        <p id="math5" onclick="multiple_math()">You can do multiple math operations in one function- click!</p>
+        <p id="math6" onclick="modulus_operator()">Modulus operator: 25 % 6 -click!</p>
+        <p id="math7" onclick="negation_operator()">Negation operators return the negative- click!</p>
+    </div>
+
+    <!--INCREMENT AND DECREMENT OPERATORS-->
+    <p>Increment:
+        <script>
+            var x=5;
+            x++;    //Increment operator
+            document.write(x);
+        </script>
+        <br>Decrement: 
+        <script>
+            var xx=5.25; 
+            xx--;   //Decrement operator
+            document.write(xx);
+        </script>
+    </p>
+
+    <!--RANDOM NUMBERS-->
+    <p>Random number between 0-1: 
+        <script>
+            document.write(Math.random());
+        </script>
+        <br>Random number between 0-100: 
+        <script>
+            document.write(Math.random()*100);
+        </script>
+    </p>
+
+    <!--MATH WITH .Math-->
+    <p> If the diameter of a circle is 40", 
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;the circumference is: 
+        <script>
+            var z = 40;
+            document.write(Math.PI * z);
+        </script>
+        .
+    </p>
+
+    <h2>More Math</h2>
+    <!--UNIQUE MATH VALUES-->
+    <p>What happens when you divide 0 by 0? &rarr; <span id="Test" onclick="my_Function()">Click here for unique math values!</span></p>
+    
+    <!--isNAN TEST-->
+    <p onclick="isNaN_function()">Click to check whether or not something is a number by using the isNaN() function: Is this a string? </p><span id="Test2"></span>
+    <p>Check whether or not something else is a number: Result? <span id="Test3"></span></p>
+    
+    <!--INFINITY-->
+    <p>To display infinity AND BEYOND!: <script>document.write(2E310);</script></p> 
+    <p>To display negative infinity: <script>document.write(-2E310);</script></p> 
+    <!--END MATH WITH JS-->
+    
     <!--COMPARISONS & BOOLEAN LOGIC-->
     <h2>Comparisons & Boolean True or False Statements:</h2>
-    <p>Boolean logic uses <a href="https://www.w3schools.com/js/js_comparisons.asp">operators</a> to compare statements. </p>
-    <p>10 > 3 ? Result: 
+    <p>10 > 3 ?: 
         <script>document.write(10 > 3);</script>
     </p>
-    <p>20 < 3 ? Result: 
+    <p>20 < 3 ?: 
         <script>document.write(20 < 3);</script>
     </p>
-    <!--EQUALITY OPERATOR-->
+
+    <!-- == EQUALITY (DOUBLE EQUAL) SIGNS OPERATOR-->
     <p>Double equal signs == check for equality, and yield true or false 
-        <br>10 == 10? 
-            <script>document.write(10==10);</script> <!--== check for equality, and yield true or false -->
-        <br>3 == 11? 
-            <script>document.write(3==11);</script>
+        <br>10 == 10? <script>document.write(10==10);</script>
+        <br>3 == 11? <script>document.write(3==11);</script>
     </p>
-    <!--VALUE AND TYPE OPERATOR-->
+
+    <!-- === VALUE & TYPE (TRIPLE EQUAL SIGNS) OPERATOR-->
     <p>The === (triple equal sign) compares VALUE and TYPE. The answer to this comparison is an answer of “true” or “false.”
         <br>For example: 
-        <br>variable xxx === variable yyy? Result: 
+        <br>variable xxx === variable yyy? 
             <script>
                 xxx=10;
                 yyy=10;
-                document.write(xxx===yyy);  //=== makes a comparison of VALUE and TYPE and yields "true" or "false"
+                document.write(xxx===yyy);  //=== makes a comparison and yields "true" or "false"
             </script>
-        <br> or 82 === "82"? Result:
+        <br> or 82 === "82"?
             <script>
                 www=82;
                 zzz="81";
                 document.write(www===zzz);
             </script>
     </p>
-    <!--AND OPERATOR-->
+
+    <!-- && AND OPERATOR-->
     <p>&& The operator to verify if one comparison AND another comparison are true. Both must be true to return “true.” If one or more is false, it returns “false.” 
         <br>(5>2 && 10>4)? Result: 
             <script>document.write(5>2 && 10>4);</script> <!--Because both statements are true.-->
         <br>(5>10 && 10>3)? Result:
             <script>document.write(5>10 && 10>3);</script> <!--Because the first statement is false, the comparison returns "false".-->
     </p>
-    <!--OR OPERATOR-->
+
+    <!-- || OR OPERATOR-->
     <p>|| determines if AT LEAST one comparison or another comparison are true. Either must be true to return “true.” If both are false, it returns “false.”
         <br>(5>10 || 10>4)? Result:
             <script>document.write(5>10 || 10>4);</script> <!--Because the second statment is true-->
         <br>(5>10 || 10>20)? Result: 
             <script>document.write(5>10 || 10>20);</script> <!--Because neither statment is true, the comparison returns "false".-->
     </p>
+    
     <!--NOT OPERATOR-->
     <p>! the NOT operator- it checks for falsehood. If a statement is false, it will return the value of “true”. If a statement is true, it will return “false.” 
         <br><span id="not" onclick="not_function()">Click here to see if !(20>10)</span>
-            <script>function not_function() {
-                document.getElementById("not").innerHTML = !(20>10)
-            }
-            </script>
         <br>(!(5>10))? Result: 
             <script>
                 document.write(!(5>10)) //Because this is a double negative, it returns "true"
             </script>
     </p>
+
     <!--TERNARY OPERATORS-->
     <h3>Ternary operators <a href="https://www.w3schools.com/js/js_comparisons.asp">?</a></h3>
     <p>Syntax: variablename = (condition) ? value1:value2 </p> <!--Remember that string values must be within "", but numbers do not-->
@@ -268,15 +272,42 @@
         <input id="Height" value="52" type="number" />
         <button onclick="Ride_Function()">Click here!</button>
         <p id="Ride"></p>
-        <script>
-            function Ride_Function() {
-                var Height, Can_ride;
-                Height = document.getElementById("Height").value;
-                Can_ride = (Height < 52)? "You are too short":"You are tall enough";
-                document.getElementById("Ride").innerHTML = Can_ride + " to ride.";
-            }
-        </script>
     </div>
+
+    <div class="votebox">
+        <h1>Are you old enough to vote?</h1>
+        <div class="votebox-text">
+            <h2>Please enter your age:</h2>
+            <br>
+            <input id="age" value="18" type="number" placeholder="Enter your age"/>
+            <button onclick="age_function()">Click to Check!</button>
+            <p id="voteable"></p>
+        </div>
+    </div>
+    <style>
+        .votebox {
+            padding: 25px;
+            text-align: center;
+            border: 3px solid red;
+            border-radius: 10px;
+            background-image: url("https://static.vecteezy.com/system/resources/previews/002/244/294/original/realistic-american-flag-background-free-vector.jpg");
+            background-size: cover;
+            width: fit-content;
+        }
+        .votebox h1, .votebox-text h2, .votebox-text p{
+            color: white;
+            text-shadow: 4px 4px 15px red;
+        }
+        .votebox button {
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: inset -3px -3px 8px black;
+        }
+        .votebox button:hover {
+            background-color: red;
+        }
+    </style>
+    <!--END TERNARY OPERATORS-->
     <!--END COMPARISONS & BOOLEAN LOGIC-->
 
 

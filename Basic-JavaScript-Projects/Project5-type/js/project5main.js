@@ -27,6 +27,4 @@ document.getElementById("Test3").innerHTML = isNaN('007');
 function not_function() {
     document.getElementById("not").innerHTML = !(20>10)
 }
-
-
 //END MATH WITH JS
