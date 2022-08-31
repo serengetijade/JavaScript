@@ -4,14 +4,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width" />
-	<link rel="stylesheet" type="text/css" href="../CSS/" >
-	<title>Project5 Types, Math, and Booleans</Title>
+    <script src="./js/project5main.js" defer></script>
+    <title>Project5 Types, Math, and Booleans</Title>
 </head>
 <body>
     <header></header>
     <nav></nav>
     <main>
         <!--TYPE OF OPERAATOR-->
+        <h2>typeof Operator</h2>
         <script>
             document.write(typeof "Word");
         </script>
@@ -23,40 +24,34 @@
         <!--TYPE COERSION-->
         <p>If you try to add different data types, javascript will choose one. This is <strong>type coersion</strong>
             <br>For example: document.write("10"+5); yields <span id="coersionresult"></span>
-            <script>
-                document.write("10"+5);
-            </script>
         </p>
 
+        <h2>MATH</h2>
         <!--UNIQUE MATH VALUES-->
         <p>What happens when you divide 0 by 0? &rarr; <span id="Test" onclick="my_Function()">Click here for unique math values!</span></p>
         
         <!--isNAN TEST-->
-        <p>Check whether or not something is a number by using the isNaN() function: <span id="Test2">Result?</span>
-            <script>document.getElementById("Test2").innerHTML = isNaN('This is a string');</script>
-        </p>
-        <p>Check whether or not something else is a number: <span id="Test3">Result?</span>
-            <script>document.getElementById("Test3").innerHTML = isNaN('007');</script>
-        </p>
+        <p onclick="isNaN_function()">Click to check whether or not something is a number by using the isNaN() function: Is this a string? </p><span id="Test2"></span>
+        <p>Check whether or not something else is a number: Result? <span id="Test3"></span></p>
         
         <!--INFINITY-->
         <p>To display infinity AND BEYOND!: <script>document.write(2E310);</script></p> 
-        <p>To display negative infinity AND BEYOND!: <script>document.write(-2E310);</script></p> 
+        <p>To display negative infinity: <script>document.write(-2E310);</script></p> 
         
-        <!--BOOLEAN LOGIC-->
-        <h2>Boolean True or False Statements:</h2>
+        <!--COMPARISONS & BOOLEAN LOGIC-->
+        <h3>Comparisons & Boolean True or False Statements:</h3>
         <p>10 > 3 ?: 
             <script>document.write(10 > 3);</script>
         </p>
         <p>20 < 3 ?: 
             <script>document.write(20 < 3);</script>
         </p>
-
+        <!-- == EQUALITY (DOUBLE EQUAL) SIGNS OPERATOR-->
         <p>Double equal signs == check for equality, and yield true or false 
             <br>10 == 10? <script>document.write(10==10);</script>
             <br>3 == 11? <script>document.write(3==11);</script>
         </p>
-
+        <!-- === VALUE & TYPE (TRIPLE EQUAL SIGNS) OPERATOR-->
         <p>The === (triple equal sign) compares VALUE and TYPE. The answer to this comparison is an answer of “true” or “false.”
             <br>For example: 
             <br>variable xxx === variable yyy? 
@@ -72,13 +67,14 @@
                     document.write(www===zzz);
                 </script>
         </p>
-
+        <!-- && AND OPERATOR-->
         <p>&& The operator to verify if one comparison AND another comparison are true. Both must be true to return “true.” If one or more is false, it returns “false.” 
             <br>(5>2 && 10>4)? Result: 
                 <script>document.write(5>2 && 10>4);</script> <!--Because both statements are true.-->
             <br>(5>10 && 10>3)? Result:
                 <script>document.write(5>10 && 10>3);</script> <!--Because the first statement is false, the comparison returns "false".-->
         </p>
+        <!-- || OR OPERATOR-->
         <p>|| determines if AT LEAST one comparison or another comparison are true. Either must be true to return “true.” If both are false, it returns “false.”
             <br>(5>10 || 10>4)? Result:
                 <script>document.write(5>10 || 10>4);</script> <!--Because the second statment is true-->
@@ -97,6 +93,5 @@
 
     </main>
     <footer></footer>
-    <script src="js/project5main.js"></script> <!--It's best practice to put this at the end of the body tag so that it doesn't slow loading-->
 </body>
 </html>

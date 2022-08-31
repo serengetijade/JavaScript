@@ -1,0 +1,78 @@
+<!--Project6 Ternary Operators & Constructors-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="../CSS/" >
+    <script src="js/project6main.js"></script>
+	<title>Project6 Ternary Operators & Constructors</Title>
+    <style>
+        .votebox {
+            padding: 25px;
+            margin: 0 auto;
+            text-align: center;
+            border: 3px solid red;
+            border-radius: 10px;
+            background-image: url("https://static.vecteezy.com/system/resources/previews/002/244/294/original/realistic-american-flag-background-free-vector.jpg");
+            background-size: cover;
+            width: fit-content;
+        }
+        .votebox h1, .votebox-text h2, .votebox-text p{
+            color: white;
+            text-shadow: 4px 4px 15px red;
+        }
+        .votebox button {
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: inset -3px -3px 8px black;
+        }
+        .votebox button:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+    <!--TERNARY OPERATORS-->
+    <h3>Ternary operators <a href="https://www.w3schools.com/js/js_comparisons.asp">?</a></h3>
+    <p>Syntax: variablename = (condition) ? value1:value2 </p> <!--Remember that string values must be within "", but numbers do not-->
+    <p>for example: (Bigger=(5>1)? "Left number is bigger":"Right number is bigger"....
+        <br>Result:
+        <script>
+            document.write(Bigger=(5>1)? "Left number is bigger":"Right number is bigger");
+            //Value1 is used when condition is true
+            //Value2 is used when condition is false
+        </script>
+    </p>
+    <div>
+        <p>Here is a more complex example: 
+            <br>Riders must be at least 52 cm tall to ride.
+        </p>
+        <input id="Height" value="52" type="number" />
+        <button onclick="Ride_Function()">Click here!</button>
+        <p id="Ride"></p
+        <script>
+        </script>
+    </div>
+
+    <div class="votebox">
+        <div>
+            <h1>Are you old enough to vote?</h1>
+            <div class="votebox-text">
+                <h2>Please enter your age:</h2>
+                <br>
+                <input id="age" value="18" type="number" placeholder="Enter your age"/>
+                <button onclick="age_function()">Click to Check!</button>
+                <p id="voteable"></p>
+            </div>
+        </div>
+    </div>
+    <!--END TERNARY OPERATORS-->
+
+    </main>
+    <footer></footer>
+</body>
+</html>

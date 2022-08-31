@@ -29,7 +29,7 @@ function thankyounote() { //Display text after clicking submit in the p element 
     document.getElementById("submitandshow").innerHTML = str;
 }
 
-//MATH WITH JS
+//MATH WITH CONCATENATE
 function addition_function() { //Addition operator +
     var  addition = 2+2;
     document.getElementById("math").innerHTML="2 + 2 = " + addition;
