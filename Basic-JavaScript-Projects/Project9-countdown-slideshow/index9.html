@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="css/project9.css">
+    <script src="js/project9main.js" defer></script> 
+	<title>Project9</Title>
+	<style></style>
+</head>
+<body>
+	<header></header>
+	<nav></nav>
+	<main>
+        <!--COUNTDOWNTIMER-->
+        <div class="timer-container">
+            <div >
+                <h1>Project: Countdown Slideshow</h1>
+            </div>
+            <div class="timer-text">
+                <p>How many seconds would you like to set your alarm for?</p>
+                <input id="seconds" value="" type="number" placeholder="Enter time in seconds"/>
+                <button onclick="countdown()">Set Alarm!</button>
+                <p id="timer">&nbsp;</p>
+            </div>
+        </div>
+        <!--END COUNTDOWN TIMER-->
+        
+        <br>
+
+        <!--SLIDESHOW-->
+        <div class="slideshow-container">
+            <!--Slide #1-->
+            <div class="mySlides fade">
+                <div class="numbertext"> 1 / 5 </div>
+                <img src="img/canyon.jpg" style="width:100%" alt="Green Canyon">
+                <div class="slide-text">Canyon</div>
+            </div>
+
+            <!--Slide #2-->
+            <div class="mySlides fade">
+                <div class="numbertext"> 2 / 5 </div>
+                <img src="img/cave.jpg" style="width:100%" alt="Waterfall Cave">
+                <div class="slide-text">Cave</div>
+            </div>
+
+            <!--Slide #3-->
+            <div class="mySlides fade">
+                <div class="numbertext"> 3 / 5 </div>
+                <img src="img/forest.jpg" style="width:100%" alt="Forest">
+                <div class="slide-text">Forest</div>
+            </div>
+
+            <!--Slide #4-->
+            <div class="mySlides fade">
+                <div class="numbertext"> 4 / 5 </div>
+                <img src="img/mountain.jpg" style="width:100%" alt="Mountain View">
+                <div class="slide-text">Misty Mountain</div>
+            </div>
+
+            <!--Slide #5-->
+            <div class="mySlides fade">
+                <div class="numbertext"> 5 / 5 </div>
+                <img src="img/humans.jpg" style="width:100%" alt="Human Intervention">
+                <div class="slide-text">What we do.</div>
+            </div>
+
+            <!--Next and Previous Buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!--Dots/Circles-->
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        <!--END SLIDESHOW-->
+    </main>
+	<footer></footer>
+</body>
+</html>
