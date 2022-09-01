@@ -329,7 +329,43 @@
     <p><span onclick="count_Function()">Click here to count!</span>
     <br>If you start at 9 and count up +=1, you get: <span id="Counting"></span></p>
     
+    <!--SOURCES: LOCAL AND GLOBAL VARIABLES-->
+    <div>
+        <h2>Sources: Local and Global Variables</h2>
+        <button onclick="whatwhat()">Accesible Variables?</button>
+        <p id="local_global_var">???</p>
+        <br>
+    </div>
+    <div>
+        <button onclick="whatnot()">Locked Variables?</button>
+        <p id="erroneous">???</p>
+    </div>
 
+    <!--Locale Date and Time Methods-->
+    <p id="Greeting" onclick="get_Date()">Click here for the Date</p>
+    <button onclick="whattime()">What time is it?</button>
+    <p id="whattime">???</p>
+
+    <!--if STATEMENTS-->
+    <h2>if Statements</h2>
+    <script> //A very basic if statement:
+        if (1<2) {
+            document.write("The left number is smaller than the number on the right.");
+        }
+    </script>
+
+    <h3>If Else Statements</h3>
+    <p>Write your age:</p>
+    <input id="Age" value="" type="number" />
+    <p id="How_old_are_you?"></p>
+    <button onclick="Age_Function()">Click here</button>
+
+    <h3>If Else Elseif Statements</h3>
+    <p>How are you feeling today?</p>
+    <input id="feelings" value="" type="string" style="text-transform:lowercase" />
+    <p id="responses"></p>
+    <button onclick="feelings_function()">So?</button>
+    <!--END IF STATEMENTS-->
 
 </body>
 </html>
