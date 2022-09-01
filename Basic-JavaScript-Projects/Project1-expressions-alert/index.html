@@ -367,5 +367,77 @@
     <button onclick="feelings_function()">So?</button>
     <!--END IF STATEMENTS-->
 
+            <!--STRING METHODS-->
+            <h2>String Methods</h2>
+            <p><a href="https://www.w3schools.com/jsref/jsref_obj_string.asp">Click here</a> for the W3 list of String Methods</p>
+            <!--CONCAT() METHOD-->
+            <div>
+                <h3>concat Method</h3>
+                <p id="ConcatenateMe"></p>
+                <button onclick="full_Sentence()">Click here for a sentense.</button>
+            </div>
+    
+            <!--SPLIT() METHOD WITH ELEMENT VALUES-->
+            <div>
+                <h3>split & toUpperCase</h3>
+                <p id="presplit">How many letters of this sentence would you like to see?</p>
+                <input id="splitnumber" type="number" value="" max="56" min="-55" />
+                <button onclick="splitaway()">Show me!</button>
+                <p id="postsplit">&nbsp;</p>
+            </div>
+    
+            <!--toUpperCase METHOD-->
+            <div>
+                <button onclick="texttoupper()">Click here to see it in upper case</button>
+                <p id="texttoupper">&nbsp;</p>
+            </div>
+    
+            <!--SEARCH METHOD-->
+            <div>
+                <h3>search Method</h3>
+                <p id="searchable">Here is a paragraph whith text, and numbers (like 10, 2, 15, 28).
+                    <br>It is written in black, but could be any color, like blue, yellow, green, orange, or silver!
+                    <br>It may be about griffins, unicorns, kittens, or any number of other popular subjects. 
+                    <br>And because it is a string, it can be searched with the .search method.
+                </p>
+                <input id="thesearchbegins" type="string" value="" />
+                <button onclick="searchme()">Search</button>
+                <p id="sherlock">Your search result will display here</p>
+            </div>
+    
+            <!--toString METHOD-->
+            <div>
+                <h3>toString Method</h3>
+                <button onclick="string_Method()">Click Here</button>
+                <p id="Numbers_to_string">&nbsp;</p>
+            </div>
+            <!--END STRING METHODS-->
+    
+            <!--NUMBERS METHODS-->
+            <h2>NUMBERS METHODS</h2>
+            <p><a href="https://www.w3schools.com/jsref/jsref_obj_number.asp">Numbers Methods and Properties</a></p>
+            <p>X = 1235456.564549</p>
+    
+            <!--toPrecision METHOD-->
+            <div>
+                <h3>toPrecision Method</h3>
+                <button onclick="precision_Method()">Click here</button>
+                <p id="Precision">&nbsp;</p>
+            </div>
+            <!--toFixed Method-->
+            <div>
+                <h3>toFixed Method</h3>
+                <p>Returns a set number of digits.</p>
+                <button onclick="fixed_method()">fixed Method</button>
+                <p id="Fixy">&nbsp;</p>
+            </div>
+            <!--valueOf Method-->
+            <div>
+                <h3>valueOf Method</h3>
+                <button onclick="valueOf_function()">valueOf Method</button>
+                <p id="valued">&nbsp;</p>
+            </div>
+            <!--END NUMBERS METHODS-->
+
 </body>
 </html>

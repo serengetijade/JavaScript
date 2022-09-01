@@ -65,3 +65,14 @@ function feelings_function() {
     document.getElementById("responses").innerHTML = response;
 }
 //END IF STATEMENTS
+
+//---------------------------
+//CONCAT() METHOD
+function full_Sentence() {
+    var part_1 = "I have "; //there are several locally defined variables in this function
+    var part_2 = "made this ";
+    var part_3 = "into a complete ";
+    var part_4 = "sentence.";
+    var whole_sentence = part_1.concat(part_2, part_3, part_4); //the .concat method joins multiple variables. But it does NOT include spaces automatically.
+    document.getElementById("ConcatenateMe").innerHTML = whole_sentence;  //sets the .innerHTML property to the variable whole_sentence
+}
