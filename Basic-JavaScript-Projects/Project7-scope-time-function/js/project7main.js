@@ -59,6 +59,9 @@ function feelings_function() {
     else if (thefeels == "bored") {
         response = "Yeah, that happens.";
     }
+    else if (thefeels == "") {
+        response = "Well...?";
+    }
     else {
         response = "Hmmm...Go on.";
     }
@@ -66,13 +69,14 @@ function feelings_function() {
 }
 //END IF STATEMENTS
 
-//---------------------------
-//CONCAT() METHOD
-function full_Sentence() {
-    var part_1 = "I have "; //there are several locally defined variables in this function
-    var part_2 = "made this ";
-    var part_3 = "into a complete ";
-    var part_4 = "sentence.";
-    var whole_sentence = part_1.concat(part_2, part_3, part_4); //the .concat method joins multiple variables. But it does NOT include spaces automatically.
-    document.getElementById("ConcatenateMe").innerHTML = whole_sentence;  //sets the .innerHTML property to the variable whole_sentence
+//WHILE LOOP 
+function count_to_ten() {
+    var digit = "";             //creates variable "digit" and leaves it's value undefined
+    var X = 1;                  //creates variable X and sets value to 1
+    while(X < 11) {              //the parameter = X < 11. So this function will runn while that statement is true.
+        digit += "<br>" + X;    //
+        X++;                    //adds one to the value
+    }
+    document.getElementById("counting_to_ten").innerHTML = digit;
 }
+//END WHILE LOOP

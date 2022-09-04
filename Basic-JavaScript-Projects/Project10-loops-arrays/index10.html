@@ -1,0 +1,113 @@
+<!--Project7 Scope Time Funcction -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+    <script src="js/project10main.js" defer></script> <!--It's best practice to put this at the end of the body tag so that it doesn't slow loading-->
+	<title>Project10</Title>
+	<style></style>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+        <!--WHILE LOOP-->
+        <div>
+            <h3>While loop</h3>
+            <p>You can use a while loop to count to 10:</p>
+            <p id="counting_to_ten"></p>
+            <button onclick="count_to_ten()">Count?</button>
+            
+            <p>Another while loop:</p>
+            <p id="Loopy"></p>
+            <p id="Loop"></p>
+            <button onclick="Call_Loop()">Click here to call another loop</button>
+        </div>
+        <!--END WHILE LOOP-->
+
+        <!--STRING LENGTH PROPERTY-->
+        <div>
+            <h3>Strnig Length Property</h3>
+            <p>This returns the length of a string, ie how many characters were used (including spaces and other characters).</p>
+            <input id="lengthme" type="text" placeholder="Enter a few words here" />
+            <button onclick="get_length()">Click here to see the length of the string</button>
+            <p id="lengthnumber">&nbsp;</p>
+        </div>
+        <!--END STIRNG LENGTH PROPERTY-->
+
+        <!--FOR LOOP-->
+        <h3>for Loop</h3>
+        <p>A “For Loop” is used to repeat a section of code a number of times. For Loops are used when the number of iterations are known.</p>
+        <p id="List_of_Instruments"></p>
+        <button onclick="for_Loop()">Click here</button>
+        <!--END FOR LOOP-->
+
+        <!--ARRAYS-->
+        <h3>Arrays</h3>
+        <p id="Cat"></p>
+        <button onclick="cat_pics()">Click here for adorableness</button>
+        <!--END ARRAYS-->
+
+        <!--CONST AND VAR TROUBLESHOOTING-->
+        <div>
+            <h3>const and var Troubleshooting</h3>
+            <p>var assigns a variable that can change value
+                <br>const assigns a constant whose identifier and value can not change - sort of. 
+                <br>You CAN change {argument:value}s assigned to a const 
+            </p>
+            <p id="Constant"></p>
+            <button onclick="constant_function()">Click here!</button>
+        </div>
+        <div>
+            <h3>var & let </h3>
+            <p>var declared a variable that carries it's value forward until changed
+                <br>let declared a varible but one that has block scope, meaning it can only be accessed by code within it's block
+                <br>
+            <script>
+                var ww = 82;
+                document.write("<br>" + ww);
+                {
+                    let ww = 33;
+                    document.write("<br>" + ww);
+                }
+                document.write("<br>" + ww);
+            </script>
+            </p>
+        </div>
+        <!--END CONST AND VAR TROUBLESHOOTING-->
+
+        <!--RETURN STATEMENT-->
+        <div>
+            <h3>return Statement</h3>
+            <p id="myReturnFunction">&nbsp;</p>
+
+            <p id="Car_Object">&nbsp;</p>
+        </div>
+        <!--END RETURN STATEMENT-->
+
+        <!--BREAK & CONTINUE STATEMENT-->
+        <div>
+            <h3>break & continue Statments</h3>
+            <p>The break statement "jumps out" of a loop.
+                <br>The continue statement "jumps over" one iteration in the loop.
+            </p>
+        </div>
+        <div>
+            <p>A for loop with a <strong>break</strong> statement.</p>
+            <p id="printbreak">&nbsp;</p>
+            <button onclick="printbreak()">break</button>
+        </div>
+
+        <div>
+            <p>A loop with a <strong>continue</strong> statement.
+                <br>Recall: The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.</p>
+            <p id="printcontinue">&nbsp;</p>
+            <button onclick="printcontinue()">continue</button>
+        </div>
+            <!--END BREAK & CONTINUE STATEMENT-->
+
+    </main>
+    <footer></footer>
+</body>
+</html>
