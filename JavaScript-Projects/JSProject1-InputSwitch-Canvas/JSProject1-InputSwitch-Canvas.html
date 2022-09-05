@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<script src="js/JSProject1-InputSwitch-Canvas.js" defer></script> 
+	<title>HTML1: Switch, Class</Title>
+	<style></style>
+</head>
+<body>
+	<header></header>
+	<nav></nav>
+	<main>
+		<!--SWITCH STATEMENT-->
+		<div>
+			<h2>Switch Statements</h2>
+			<p><a href="https://www.w3schools.com/jsref/jsref_switch.asp">W3 switch statements</a> 
+				<br>The switch statement evaluates an expression. The value of the expression is then compared with the values of each case in the structure. If there is a match, the associated block of code is executed.
+			</p>
+			<p>Pick your favorite project to make from the list:</p>
+			<ul>
+				<li>Sewing</li>
+				<li>Knitting</li>
+				<li>Crocheting</li>
+				<li>Painting</li>
+				<li>Woodwork</li>
+				<li>Other stuff</li>
+			</ul>
+			<p>Enter your choice below:</p>
+			<input id="Craft_Input" type="text">
+			<button onclick="Craft_Switch_Function()">Submit color</button>
+			<p id="Craft_Output">&nbsp;</p>
+		</div>
+		<!--END SWITCH STATEMENT-->
+
+		<!--GET ELEMENT BY CLASS-->
+		<div>
+			<h2>getElementByClass method</h2>
+			<p class="Click">This text will change!</p>
+			<p class="Click">This text will NOT change.</p>
+			<button onclick="Hello_World_Function()">Click</button>
+		</div>
+		<!--END GET ELEMENT BY CLASS-->
+
+		<!--CANVAS HTML ELEMENT-->
+		<div>
+			<h2>HTML canvas Element </canvas></h2>
+			<a href="https://www.w3schools.com/html/html5_canvas.asp">W3 canvas graphics</a>
+			<br>
+			<a href="https://www.w3schools.com/tags/ref_canvas.asp">W3 canvas reference</a>
+		</div>
+		<div>
+			<canvas id="Canvas_Name" width="500" height="300" style="border: 3px solid gray;"></canvas>
+		</div>
+		<div>
+			<canvas id="Canvas_2"	width="500" height="300" style="border: 3px solid gray;"></canvas>
+		</div>
+
+
+			<!--END CANVAS HTML ELEMENT-->
+
+	</main>
+	<footer></footer>
+</body>
+</html>
