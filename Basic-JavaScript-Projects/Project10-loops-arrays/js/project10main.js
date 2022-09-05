@@ -87,8 +87,8 @@ document.getElementById("Car_Object").innerHTML = cars.description();
 //BREAK & CONTINUE STATEMENT
 //break statment
 let breakstatement = "";
-for (let i = 0; i < 10; i++) { //defines the conditions of the for loop as counting up by one increment on every loop
-    if (i === 4) { break; }
+for (let i = 0; i < 10; i++) {  //defines the conditions of the for loop as counting up by one increment on every loop
+    if (i === 4) { break; }     //breaks out of the switch block. This will stop the execution of more execution of code and/or case testing inside the block. If break is omitted, the next code block in the switch statement is executed.
     breakstatement += "The number is " + i + "<br>";
 }
 
