@@ -7,7 +7,7 @@ This repository is for JavaScript projects and examples. Files are for learning 
 - [Reference Code: Basic JavaScript Projects](https://github.com/serengetijade/JavaScript)
 - [Reference Code: JavaScript Projects](https://github.com/serengetijade/HTMLandCSS/tree/main/projects/Bootstrap4Project)
 
-## [REFERENCE CODE LIBRARY](https://github.com/serengetijade/HTMLandCSS/tree/main/html):
+## REFERENCE CODE LIBRARY:
 In addition to the projects, there is a small code library that is useful for referencing basic elements and design. 
 #### [Basic JavaScript](https://github.com/serengetijade/JavaScript)
 a library of introductory JavaScipt elements. 
