@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="css/JSProject3-data-attribute.css" >
+	<script src="js/JSProject3-data-attribute.js" defer></script> 
+	<title>JS Project 3</Title>
+	<style></style>
+</head>
+<body>
+	<header></header>
+	<nav></nav>
+	<main>
+		<!--DATA-* ATTRIBUTE-->
+		<div>
+			<h2>data-* Attribute</h2>
+			<p>add customized <a href="https://www.w3schools.com/tags/att_data-.asp">data</a> to a website or application.</p>
+			<ol>
+				<li data-family_relation="father">Mark</li>  <!--data-* can NOT have upper cases, but the value can-->
+				<li data-family_relation="mother">Kelly</li>
+				<li data-family_relation="sister">Sarah</li>
+			</ol>
+		</div>
+
+		<div class="universe-data">
+			<p>Click on a universe to see a character!</p>
+			<ul >
+				<li onclick="displayType(this)" id="DC" 		data-character-type="Batman">DC</li>
+				<li onclick="displayType(this)" id="StarWars" 	data-character-type="Luke Skywalker">Star Wars</li>
+				<li onclick="displayType(this)" id="Marvel" 	data-character-type="Marvel">Marvel</li>
+				<li onclick="displayType(this)" id="StarTrek" 	data-character-type="Jean-Luc Picard">Star Trek</li>
+			</ul>
+		</div>
+
+		<div class="olMacDonald">
+			<p>Ol' MacDonald Had a Farm</p>
+			<p>Click on an animal to see what it says!</p>
+			<ol>
+				<li onclick="olMac(this)" id="Pig" 	data-animal-noise="Oink-Oink!">Pig</li>
+				<li onclick="olMac(this)" id="Dog" 	data-animal-noise="Woof!">Dog</li>
+				<li onclick="olMac(this)" id="Lamb" data-animal-noise="Baa-Baa!">Lamb</li>
+				<li onclick="olMac(this)" id="Pony" data-animal-noise="Neigh!">Pony</li>
+			</ol>
+		</div>
+		<!--END DATA-* ATTRIBUTE-->
+	</main>
+	<footer></footer>
+</body>
+</html>
