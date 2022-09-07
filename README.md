@@ -5,6 +5,7 @@ This repository is for JavaScript projects and examples. Files are for learning 
 
 ## PROJECTS:
 - [Tic Tac Toe Game: a simple game with css styling and javaScript](https://github.com/serengetijade/JavaScript/tree/main/TicTacToe)
+- [Calculator: A basic HTML, CSS, and JavaScript Calculator](https://github.com/serengetijade/JavaScript/tree/main/Calculator)
 - [Reference Code: Basic JavaScript Projects](https://github.com/serengetijade/JavaScript)
 - [Reference Code: JavaScript Projects](https://github.com/serengetijade/HTMLandCSS/tree/main/projects/Bootstrap4Project)
 
