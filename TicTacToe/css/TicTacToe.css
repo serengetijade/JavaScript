@@ -1,0 +1,36 @@
+body {
+    background-image: url("https://img.freepik.com/free-photo/tartan-wooden-background_1205-2118.jpg?w=996&t=st=1662491598~exp=1662492198~hmac=c98e548a7ab9aa3680ae2cf6937d763c7dbbe546334c6848fcf5e9c32f3f3f50");
+    background-size: cover;
+}
+.game-info {
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 8px red;
+}
+.game-container {
+    margin: 0 auto;
+    width: fit-content;    
+    margin-top: 50px;
+}
+.game-container table {
+    border-collapse: collapse; /*collapse table border into 1 border*/
+    border-style: hidden; /*hide the outer border on table*/
+}
+.game-container td { /*the "gameboard"*/
+    padding: 0px;
+    width: 200px;   /*make square td cells*/
+    height: 200px;  /*make square td cells*/
+    border: 8px solid white;  /*board lines*/
+    filter: contrast(3);
+    cursor: pointer;
+    text-align: center;
+}
+.game-container td:hover{
+    box-shadow: inset 5px 5px 10px palegoldenrod, inset -5px -5px 10px palegoldenrod;
+    border-radius: 4px;
+}
+.game-container canvas {
+    position: absolute; /*set the position to the top left corner of the game-container*/
+    z-index: 10; /*move the canvas to the top- over the game table*/
+    pointer-events: none; /*make the canvas invisible*/
+}
