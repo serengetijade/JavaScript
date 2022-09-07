@@ -4,6 +4,7 @@
 This repository is for JavaScript projects and examples. Files are for learning and illustrative purposes with minimal css and other customization in order to keep the code as readable as possible. 
 
 ## PROJECTS:
+- [Tic Tac Toe Game: a simple game with css styling and javaScript](https://github.com/serengetijade/JavaScript/tree/main/TicTacToe)
 - [Reference Code: Basic JavaScript Projects](https://github.com/serengetijade/JavaScript)
 - [Reference Code: JavaScript Projects](https://github.com/serengetijade/HTMLandCSS/tree/main/projects/Bootstrap4Project)
 
@@ -25,7 +26,9 @@ a library of introductory JavaScipt elements.
 #### [Intermediate JavaScript](https://github.com/serengetijade/HTMLandCSS/tree/main/projects/Bootstrap4Project)
 a library of intermediate JavaScript elements.
 - [Project 1: switch based on input, canvas element]()
-- [Project 2: form validation] ()
+- [Project 2: form validation](https://github.com/serengetijade/JavaScript/tree/main/JavaScript-Projects/JSProject2-form-validation)
+- [Project 3: data- attribute](https://github.com/serengetijade/JavaScript/tree/main/JavaScript-Projects/JSProject3-data-attribute)
+- [Project 4: arrow functions, some method](https://github.com/serengetijade/JavaScript/tree/main/JavaScript-Projects/JSProject4-arrow-functions)
 
 >“Javascript is the duct tape of the Internet."
 —Charlie Campbell
