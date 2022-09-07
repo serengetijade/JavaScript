@@ -12,7 +12,7 @@ function Input_Digit(digit) {
     const {Display_Value, Wait_Second_Operand } = Calculator;
     if (Wait_Second_Operand === true) {     //Check if the Wait_Second_Operand is true and sets Display_Value to the key that was clicked.
         Calculator.Display_Value = digit;
-        Calculator.Wait_Second_Operand - false;
+        Calculator.Wait_Second_Operand = false;
     }
     else {
         Calculator.Display_Value = Display_Value === '0' ? digit : Display_Value + digit;   //This overwrites Display_Value if the current value is 0. Otherwise it adds onto it.
@@ -59,7 +59,7 @@ const Perform_Calculation = {
     '*': (First_Operand, Second_Operand) => First_Operand * Second_Operand,
     '+': (First_Operand, Second_Operand) => First_Operand + Second_Operand,
     '-': (First_Operand, Second_Operand) => First_Operand - Second_Operand,
-    '=': (First_Operand, Second_Operand) => Second_Operand,
+    '=': (First_Operand, Second_Operand) => Second_Operand
 };
 //END CALCULATIONS
 
@@ -97,7 +97,7 @@ keys.addEventListener('click', (event) => {
         Update_Display();
         return;
     }
-    //Ensure that AC clears all the inputs from teh Calculator screen.
+    //Ensure that AC clears all the inputs from the Calculator screen.
     if (target.classList.contains('all-clear')) {
         Calculator_Reset();
         Update_Display();
