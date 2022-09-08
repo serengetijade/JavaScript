@@ -4,8 +4,9 @@
 This repository is for JavaScript projects and examples. Files are for learning and illustrative purposes with minimal css and other customization in order to keep the code as readable as possible. 
 
 ## PROJECTS:
-- [Tic Tac Toe Game: a simple game with css styling and javaScript](https://github.com/serengetijade/JavaScript/tree/main/TicTacToe)
+- [Tic Tac Toe Game: A simple game with css styling and javaScript](https://github.com/serengetijade/JavaScript/tree/main/TicTacToe)
 - [Calculator: A basic HTML, CSS, and JavaScript Calculator](https://github.com/serengetijade/JavaScript/tree/main/Calculator)
+- [Gorgeous Pizza Menu: An interactive menu that tallys your selections](https://github.com/serengetijade/JavaScript/tree/main/Gorgeous-Pizza-Menu)
 - [Reference Code: Basic JavaScript Examples](https://github.com/serengetijade/JavaScript)
 - [Reference Code: More JavaScript Examples](https://github.com/serengetijade/HTMLandCSS/tree/main/projects/Bootstrap4Project)
 
