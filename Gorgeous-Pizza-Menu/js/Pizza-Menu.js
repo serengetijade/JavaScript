@@ -32,20 +32,11 @@ function getReceipt() {
             text1 = text1+selectedCrust+"<br>";         //Add to the text1 string.
         }
     }
-    if (selectedCrust === "Regular Crust") {
-        crustTotal = 0;
-    }
-    else if (selectedCrust === "Garlic Crust") {
-        crustTotal = 0;
-    }
-    else if (selectedCrust === "Cheesy Crust") {
-        crustTotal = 0;
-    }
-    else if (selectedCrust === "Gluten-Free Crust") {
+    if (selectedCrust === "Gluten-Free Crust") {
         crustTotal = 3;
     }
     runningTotal = sizeTotal + crustTotal;              //sum the size and crust charges
-    console.log(selectedSize+" = $"+sizeTotal+crustTotal+".00");
+    console.log(selectedSize+" = $"+sizeTotal+".00");  //Console.log is for debugging: it shows the values that you would want do inspect/passed through so far. 
     console.log("size text1: "+text1);
     console.log("subtotal: $"+runningTotal+".00");
     getTopping(runningTotal,text1);
@@ -55,18 +46,18 @@ function getReceipt() {
 //TOPPINGS
 function getTopping(runningTotal,text1) {
     var toppingTotal = 0;
-    var seletedTopping = [];
+    var selectedTopping = [];
     var toppingArray = document.getElementsByClassName("toppings");
     for (var j = 0; j < toppingArray.length; j++) {
         if (toppingArray[j].checked) {
-            seletedTopping.push(toppingArray[j].value);
-            console.log("selected topping item: ("+toppingArray[j].value+")");
+            selectedTopping.push(toppingArray[j].value);         //.push adds the value of any "checked" elements to the selectedTopping array.
+            console.log("selected topping item: ("+toppingArray[j].value+")");      //console.log for more debugging
             text1 = text1+toppingArray[j].value+"<br>";
         }
     }
-    var toppingCount = seletedTopping.length;
+    var toppingCount = selectedTopping.length;
     if (toppingCount > 1) {
-        toppingTotal = (toppingCount -1);
+        toppingTotal = (toppingCount -1);       //make the first "checked" topping "free". 
     }
     else {
         toppingTotal = 0;
