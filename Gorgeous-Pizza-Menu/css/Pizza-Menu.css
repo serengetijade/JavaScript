@@ -1,0 +1,144 @@
+/*GENERAL STYLES*/
+h1 {
+    font-family: cursive;
+}
+h3 {
+    color: rgba(0, 91, 62,1);
+    font-variant: small-caps;
+}
+/*END GENERAL STYLES*/
+
+/*NAV*/
+a:link, a:visited {
+    color: black;
+}
+.growtext:hover {
+    transform: scale(1.5);      /* Makes the element increase 1.5 times in size */
+    transition: transform .5s;  /* Makes the transform effect last 1.5 seconds */
+    text-shadow: 3px 3px 5px white;
+}
+nav {
+    z-index: 10;
+}
+.navbar {
+    text-align: right;
+}
+.navbar ul {
+    list-style: none;
+    display: inline;
+}
+.navbar li {
+    display: inline-block;
+    padding: 20px;
+    font-weight: 600;
+}
+.navbar li input {
+    border-radius: 10px;
+    text-align: right;
+    box-shadow: inset 1px 2px 10px 0 rgba(0,0,0,.5);
+}
+.navbar li input:hover {
+    background-color: lightgreen;
+}
+/*END NAV*/
+
+/*HEADER*/
+header {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    background: url("../img/pizzabanner.jpg");
+    background-size: cover;
+    z-index: -1; /*Move the background image behind the rest of the document's elements*/
+}
+header h1{
+    padding: 90px;
+    text-align: center;
+    font-size: 90px;
+    text-shadow: 4px 4px 11px white;
+}
+header p {
+    margin-bottom: 0;
+    padding: 4% 15% 4% 15%;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    font-size: larger;
+}
+/*END HEADER*/
+
+/*MENU STYLES*/
+#menuBG {
+    margin: 10px auto;
+    padding-top: 560px;
+    width: 500px;           /*Overall Width of Menu Form*/
+}
+.orderFormInstructions {
+    text-align: center;
+}
+.menu{
+    margin-bottom: 15px; 
+    padding: 10px;
+    width: 42%;   
+    border: 5px solid orange;
+    border-radius: 5px;
+    background-color: lightyellow;
+}
+.row1 .menu {
+    height: 250px;    
+}
+.row2 .menu { 
+    height: 250px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+/*END MENU STYLES*/
+
+/*CART*/
+#cart {
+    top: 0;
+    margin: 0px auto;
+    height: 200px;
+}
+#showText {
+    margin: 0px auto;
+    width: 200px;
+    height: 190px;
+    float: left;
+}
+#totalPrice {
+    margin: 0 auto;
+    width: 200px;
+    height: 190px;
+    float: right;
+}
+/*END CART*/
+
+/*BUTTONS*/
+.btnOrder, .btnSubmit {
+    text-align: center;
+}
+.buttons {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttons:active {
+    background-color: lightgreen;
+}
+/*END BUTTONS*/
+
+/*FOOTER*/
+footer {
+    padding: 25px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+}
+/*END FOOTER*/

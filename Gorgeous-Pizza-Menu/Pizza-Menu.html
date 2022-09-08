@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initial-scale=1.0" "/>
+    <meta name="description" content="A menu for ordering pizza using HTML, CSS, and JavaScipt">
+    <meta name="author" content="Jade Abreu">
+	<link rel="stylesheet" type="text/css" href="css/Pizza-Menu.css" >
+	<script src="js/Pizza-Menu.js" defer></script> 
+	<title>Pizza!!!</Title>
+</head>
+<body>
+    <nav>
+        <div  class="navbar">
+            <ul>
+                <a href="#bookmark-order"><li class="growtext">Place an Order</li></a>
+                <a href="#cart"><li class="growtext">Preview Order</li></a>
+                <a href="#contact"><li class="growtext">Contact</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1 style="margin: 0 0ps 0 20px;">Gorgeous Pizza</h1>
+        <p>A family-owned pizza parlor in the heart of the Colombia Gorge. 
+            <br>
+            <br>Our ingredients are locally and ethically sourced whenever possible. We have gluten-free, dairy-free, vegetarian, vegan, low cal, keto, soy-free, and nut-free options available. Just kidding, we sell real pizza.
+        </p>
+    </header>
+
+	<main>
+        <div id="menuBG">
+            <div class="orderFormInstructions">
+                <h1 id="bookmark-order">--- Order Form ---</h1>
+                <p>Please select your pizza configuration. 
+                    <br>One topping is included for each size selection. 
+                    <br>Additional toppings are $1 each.</p>
+            </div>
+            <form id="frmMenu">
+                <div class="row row1">
+                    <div class="menu left">
+                        <h3>Size:</h3>
+                        <input class="size" type="radio" name="Size" value="Small Pizza">Small Pizza<br>
+                        <input class="size" type="radio" name="Size" value="Medium Pizza">Medium Pizza<br>
+                        <input class="size" type="radio" name="Size" value="Large Pizza">Large Pizza<br>
+                        <input class="size" type="radio" name="Size" value="Family Pizza">Family Pizza<br>                    
+                    </div>
+                    <div class="menu right">
+                        <h3>Meats:</h3>
+                        <input class="toppings" type="checkbox" name="Topping" value="Pepperoni">Pepperoni<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Sausage">Sausage<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Andouille Sausage">Andouille Sausage<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Canadian Bacon">Canadian Bacon<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Ground Beef">Ground Beef<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Grilled Chicken">Grilled Chicken<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Anchovy">Anchovy<br>
+                        <div>+$1/topping for additional toppings</div>
+                    </div>                    
+                </div>
+                <div class="row row2">
+                    <div class="menu left">
+                        <h3>Crust:</h3>
+                        <input class="crust" type="radio" name="Crust" value="Regular Crust">Regular<br>
+                        <input class="crust" type="radio" name="Crust" value="Garlic Crust">Garlic<br>
+                        <input class="crust" type="radio" name="Crust" value="Cheesy Crust">Cheesy<br>                    
+                        <input class="crust" type="radio" name="Crust" value="Gluten-Free Crust">Gluten-Free<br>
+                        <p>Gluten-Free crust is available for a surcharge of $3.</p>
+                    </div>
+                    <div class="menu right">
+                        <h3>Veggies:</h3>
+                        <input class="toppings" type="checkbox" name="Topping" value="Mushrooms">Mushrooms<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Onions">Onions<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Tomatoes">Tomatoes<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Olives">Olives<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Green Peppers">Green Peppers<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Spinach">Spinach<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Pinapple">Pinapple<br>
+                        <div>+$1/topping for additional toppings</div>
+                    </div>                    
+                </div>
+                <div class="btnOrder">
+                    <input id="btnOrder" class="buttons" type="button" onclick="getReceipt()" value="Preview Order">
+                </div>                
+                <div id="cart">
+                    <div id="showText"></div>
+                    <div id="totalPrice"></div>
+                </div>
+            </form>
+        </div>
+        <div class="btnSubmit">
+            <br>
+            <button class="buttons" onclick="confirmation()">Submit Order</button>
+            <p id="confirmation">&nbsp;</p>
+            <br>  
+        </div>
+      
+    </main>
+	<footer>
+        <div id="contact">
+            <h1>Contact Us:</h1>
+            <p>&#9742;&#65039; (541) 123-5555 </p>
+            <p>&#128231; hello@gorgeouspizza.com</p>
+            <p>&#127968; 307 Oak Street, Hood River, OR</p>
+        </div>
+    </footer>
+</body>
+</html>
