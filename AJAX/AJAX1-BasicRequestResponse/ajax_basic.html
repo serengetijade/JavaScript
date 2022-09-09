@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic AJAX Demo</title>
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+			<h2>Get The Latest Content:</h2>
+			<div class='content' id="content">
+				<input type="button" class="button" value="Get Content" id="btn_content" onclick="getContent();"/>
+			</div>
+		<script type="text/javascript">
+			//STEP 1: Instantiate the XML HTTP Object.
+            var ajax = new XMLHttpRequest();
+
+            //STEP 2: Prepare the open AJAX request. get method is used to request information from a server. post is used to send (secure) information into the server. 
+            ajax.open('GET', 'content.html');  //Syntax: ('method', 'requested information address') <- these are the two REQUIRED parameters. 
+
+            //STEP 3: Define the AJAX response callback method. This gives the browser instructions on what to do once it recieves the information back. 
+            ajax.onreadystatechange = function() {
+                if (ajax.readyState == 4) {    //ajax.readyState means the requested content loaded to the local browser properly and is ready to parse. This if statement checks to make sure that is so and tells the browser what to do once it is: 
+                    document.getElementById('content').innerHTML = ajax.responseText; //change the "content" to whatever the responseText is. responseText is a built in AJAX method. 
+                }
+            }
+            //STEP 4: Send the AJAX request for data. This function is the onclick "trigger" that starts everything off. 
+            function getContent() {           
+                ajax.send();
+                document.getElementById('btn_content').style.display = 'none';  //change the element .style.display to none, which hides whatever was there. 
+            }
+		</script>
+    </body>
+</html>
