@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/x-icon" href="https://icons.iconarchive.com/icons/sicons/basic-round-social/256/jquery-icon.png">		 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<title>HTML Template</Title>
+	<style></style>
+</head>
+<body>
+	<main>
+        <script>
+            $(document).ready(function() {      //target the entire html page with (document) and check when it's ready - then perform a function.
+                $("html").append(               //target the html tag. Below, the \ indicates that the string continues on the next line. 
+                    //SYNTAX REQUIREMENTS Write normal html wihtin "" marks. 
+                        //Separate lines by a \. 
+                        //Make sure inner references are inside singe quotes ' '.
+                    "<body>\
+                        <div id='container'>\
+                            <div id='inner'>\
+                                <h1>Basic jQuery</h1>\
+                                <p>Paragraph 1-click me to call a function to make a console.log.</p>\
+                                <p id='two'>Paragraph 2-click me then check the console log.</p>\
+                                <p id='three'>Paragraph 3-click me!</p>\
+                                <button id='whereButton'>Where did it go?</button>\
+                                <span id='hereis'>&nbsp;</span>\
+                            </div>\
+                            <div id='inner2'>\
+                                <h1>More Basic jQuery</h1>\
+                                <span>Lorem ipsum blej hlej hhebahe bbeblallhahh.\
+                                    <br>Noenhelk klicnhenn jeurpmum behurum.</span>\
+                            </div>\
+                        </div>\
+                    </body>"                
+                );     
+                $("p:nth-of-type(1)").css({"color":"red"});     //Change the css values
+                $("#two").css({"color":"limegreen"});   
+                $("p:last-of-type()").css({"color":"blue"});  
+                
+                //SHORTHAND .click ACTION
+                $("#two.hidden").click(function() {
+                console.log("Shorthand to call a function on the click event.");
+                });
+
+                //LONGHAD .on ACTION
+                $("p:nth-of-type(1)").on( "click", function() {
+                    console.log("Longhand to call a function on a click.")
+                });
+                
+                //Hide the Button by default
+                $("#whereButton").hide();
+
+                //Hide the h1 
+                $("#three").click(function() {
+                    $("#inner h1").hide("slow");    //Slowly hide the element h1. 
+                    $('#whereButton').show();   //Show the button
+                }); 
+
+                //Show the h1
+                $("#whereButton").click(function() {    
+                    $("#inner h1").show("fast");    //Show the h1 element.
+                    $("#whereButton").hide();  //Hide the button
+                });
+
+            });
+        </script>
+    </main>
+</body>
+</html>
