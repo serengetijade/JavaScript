@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png">		<!--Page icon to display in browser tab-->
+    <script src="react.js" defer></script>
+    <script src="react-dom.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react-dom.js"></script>
+	<title>React 1</Title>
+	<style></style>
+</head>
+<body>
+	<main>
+        <div id="My_React_Code"></div>
+    </main>
+    <script>
+        var Counter = React.createClass({    //create a component- a class called Counter    
+            render: function() {
+                var time_Passed = Math.round(this.props.time_Passed / 100);             //this=the object that possesses the function
+                var seconds_Passed = time_Passed / 10 + (time_Passed % 10 ? '' : '.0'); //? – a conditional operator that checks for whether or not a condition is true, the : following it is shorthand for “else”
+                var text = 'My React code started running ' +                           //instantiate a string
+                    seconds_Passed + ' seconds ago!';
+                return React.DOM.p(null, text); //ReactDOM.render() – used to render a React Component or Components. Add to the DOM a paragraph with parameters of the variable text in it. 
+            }
+        });
+
+        var counter_Factory = React.createFactory(Counter); //a function to generate a Factory (an object that creates an object)
+
+        var start_Counting = new Date().getTime();
+        setInterval(function() {    //a method that evaluates an expression at specified intervals (milliseconds)
+            ReactDOM.render(
+                counter_Factory({time_Passed: new Date().getTime() - start_Counting}),
+                document.getElementById('My_React_Code')
+            );
+        }, 50);
+    </script>
+</body>
+</html>

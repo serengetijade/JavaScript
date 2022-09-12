@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png">		
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<title>React 3: JSX</Title>
+	<style></style> 	<!--If not using a .css stylesheet, put style element at the top of the document-->
+</head>
+<body>
+	<main>
+        <div id='JSX'></div>
+    </main>
+	<script type="text/babel">
+        class Greeting extends React.Component {    //"Class" specifies a class. “React.Component” is used to specify a class or function.
+            render() {                              //The “render()” is used to create a function in React.
+                return <h1>Hello there beautiful world!</h1> //The “return” statement returns information.
+            }
+        }
+
+        ReactDOM.render(<Greeting />, document.getElementById('JSX')); 
+    </script> 
+</body>
+</html>	
