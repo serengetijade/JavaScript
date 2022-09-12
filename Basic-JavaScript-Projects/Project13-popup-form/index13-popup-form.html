@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="./css/index13.css" >
+	<script src="js/JSProject2-form-validation.js" defer></script> 
+	<title>JS 13 Popup Form</Title>
+	<style></style>
+</head>
+<body>
+	<main>
+		<div>
+			<div>
+				<h1>Popup Form</h1>
+				<p>See <a href="https://www.w3schools.com/howto/howto_js_popup_form.asp">W3 Schools Popup Form</a>
+				for more info.</p>
+				<p>This paragraph is only here for filler.</p>
+			</div>
+
+			<!--OPEN BUTTON-->
+			<div>
+				<button class="open-button" onclick="openForm()">Open Form</button>
+			</div>
+			<!--END OPEN BUTTON-->
+
+			<!--POPUP FORM-->
+			<div class="form-popup" id="popupForm">
+				<!--FORM CONTAINER-->
+				<form action="" class="form-container">
+					<h1>Form Title</h1>
+					<label for="username">Username:</label>
+					<input name="username" type="text" placeholder="Enter Username">
+					<br>
+					<label for="email">Email:</label>
+					<input name="email" type="email" placeholder="Enter Email">
+					<br>
+					<label for="password">Password:</label>
+					<input name="password" type="password" placeholder="Enter Password">
+					<br>
+					<!--SUBMIT/LOGIN BUTTON-->
+					<button type="submit" class="btn">Login</button>
+					<button type="button" class="btn cancel" onclick="closeForm()">Close</button>					
+				</form>
+			</div>
+			<!--END POPUP FORM-->
+		</div>
+	</main>
+	<!--JavaScript-->
+	<script>
+		function openForm() {
+			document.getElementById("popupForm").style.display = "block";
+		}
+
+		function closeForm() {
+			document.getElementById("popupForm").style.display = "none";
+		}
+
+		//window.moveTo(50%, 50%);
+	</script>
+</body>
+</html>

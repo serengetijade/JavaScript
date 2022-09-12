@@ -1,0 +1,60 @@
+/* OPEN BUTTON*/
+.open-button {
+    position: fixed;
+    padding: 15px 20px;   
+    background-color: #555;
+    opacity: 0.8; 
+    color: white;
+    border: none;
+    width: 280px;
+    cursor: pointer;
+}
+  
+/*POPUP FORM*/
+.form-popup {
+    display: none; /*HIDE BY DEFAULT*/
+    position: fixed;
+    z-index: 5; /*Ensure it sits on top of other elements*/
+    border: 3px solid darkgray;
+    /*Use top/bottom/etc position to place the form in a specific location*/
+}
+
+/*FORM CONTAINER*/
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: lightgray;
+}
+.form-container input{
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+.form-container input:focus {
+    background-color: white;
+    outline: none;
+}
+
+/*SUBMIT/LOGIN BUTTON */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.75;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: blue;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
