@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<title>Fade</Title>
+	<!--CSS-->
+	<style>
+		body {
+			opacity: 1;
+			transition: 2s opacity;
+		}
+		body.fade-out {
+			opacity: 0;
+			transition: none;
+		}
+	</style>
+	<!--END CSS-->
+</head>
+<body>
+	<main>
+		<h1>Fade</h1>
+		<p>For a smooth fade, start off as opacity:0; then turn that class off.</p>
+		<img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60">
+	</main>
+
+	<!--JavaScript for Fade-->
+	<script>
+		document.body.classList.add('fade-out');
+
+		window.addEventListener('DOMContentLoaded', () => {
+			document.body.classList.remove('fade-out');
+		});
+	</script>
+</body>
+</html>
