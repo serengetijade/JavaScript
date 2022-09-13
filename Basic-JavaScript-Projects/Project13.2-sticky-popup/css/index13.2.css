@@ -1,0 +1,82 @@
+/* OPEN BUTTON*/
+.open-button {
+    padding: 10px;   
+    opacity: 0.8; 
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/*STICKY ELEMENT 1*/
+#sticky1 {
+    position: sticky;   /*Sets positioned based on the user's scroll position.*/
+    position: -webkit-sticky;  /*Safari*/
+    top: 0;             /*Set where the sticky element "stops"*/
+    padding: 5px 10px;
+    background-color: cadetblue;
+    text-align: right;
+}
+/*END STICKY ELEMENT 1*/
+
+/*STICKY ELEMENT 2*/
+#sticky2 {
+    position: sticky;   /*Sets positioned based on the user's scroll position.*/
+    position: -webkit-sticky;  /*Safari*/
+    bottom: 10px;
+    text-align: right;
+}
+/*END STICKY ELEMENT 2*/
+  
+/*POPUP FORM*/
+.form-popup {
+    display: none;  /*HIDE BY DEFAULT*/
+    position: absolute;
+    z-index: 5;     /*Ensure it sits on top of other elements*/
+    /*Use top/bottom/etc position to place the form in a specific location*/
+}
+
+/*FORM CONTAINER*/
+.form-container {
+    border: 3px solid darkgray;
+    width: 300px;
+    max-width: 300px;
+    padding: 10px;
+    background-color: lightgray;
+}
+.form-container input{
+    box-sizing: border-box; /*Makes the inputs+padding fit within 100% width of parent element*/
+    margin: 5px 0 22px 0;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    background: #f1f1f1;
+}
+.form-container input:focus {
+    background-color: white;
+    outline: none;
+}
+
+/*SUBMIT/LOGIN BUTTON */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.75;
+}
+
+/* CANCEL BUTTON */
+.form-container .cancel {
+    background-color: blue;
+}
+
+/* BUTTON HOVER EFFECTS */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+/*END POPUP FORM*/
