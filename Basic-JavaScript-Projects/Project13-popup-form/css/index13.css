@@ -1,13 +1,17 @@
 /* OPEN BUTTON*/
 .open-button {
     position: fixed;
-    padding: 15px 20px;   
+    padding: 15px 20px;  /*Padding around "text"*/ 
     background-color: #555;
-    opacity: 0.8; 
+    opacity: 0.8;   /*Works with hover effect, see below*/
     color: white;
-    border: none;
-    width: 280px;
+    border: none;   /*Remove default border*/
+    width: 280px;   /*Set width of button element*/
     cursor: pointer;
+    /*Position the button on the bottom-right of the screen:
+    bottom: 25px;
+    right: 25px;
+    */
 }
   
 /*POPUP FORM*/
@@ -16,19 +20,24 @@
     position: fixed;
     z-index: 5; /*Ensure it sits on top of other elements*/
     border: 3px solid darkgray;
-    /*Use top/bottom/etc position to place the form in a specific location*/
+    /*Use top/bottom/etc position to place the form in a specific location:
+    bottom: 0;
+    right: 15px;
+    */
 }
 
 /*FORM CONTAINER*/
 .form-container {
+    width: 300px;
     max-width: 300px;
     padding: 10px;
     background-color: lightgray;
 }
 .form-container input{
-    width: 90%;
-    padding: 15px;
+    box-sizing: border-box; /*Makes the inputs+padding fit within 100% width of parent element*/
     margin: 5px 0 22px 0;
+    padding: 15px;
+    width: 100%;
     border: none;
     background: #f1f1f1;
 }
@@ -49,12 +58,12 @@
     opacity: 0.75;
 }
 
-/* Add a red background color to the cancel button */
+/* CANCEL BUTTON*/
 .form-container .cancel {
     background-color: blue;
 }
 
-/* Add some hover effects to buttons */
+/* BUTTON HOVER EFFECTS */
 .form-container .btn:hover, .open-button:hover {
     opacity: 1;
 }
