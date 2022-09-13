@@ -32,6 +32,9 @@
             width: 100%;    /*these three properties scale an image to fit it's parent container*/
             object-fit: cover; /*these three properties scale an image to fit it's parent container*/
         }
+        .slideshowtext {
+            text-align: center;
+        }
 	</style>
 </head>
 <body>
@@ -52,18 +55,22 @@
             <div>
                 <img src="https://images.unsplash.com/photo-1593424718424-cf4d83f3def1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGRlc3NlcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="Victoria Cake">
             </div>
-        </div>
+            <div class="slideshowtext">
+                Order TODAY!
+            </div>
+        </div> <!--You can include more than just images, such as text-->
     </main>
 	<script>
         //SLIDESHOW
-        $("#slideshow > div:gt(0)").hide();
+        $("#slideshow > div:gt(0)").hide(); // 
+        ">" indicates a child element of "#slideshow"; :gt is a selector with an index number or higher(starting at (n))
 
         setInterval(function() {
-            $('#slideshow > div:first')
-            .fadeOut(1000)
-            .next()
+            $('#slideshow > div:first')     //Starting with the first > child element "div"
+            .fadeOut(1000)                  //
+            .next()                         //Returns the next sibling element
             .fadeIn(1000)
-            .end()
+            .end()                          //Ends the most recent filtering operation in the current chain, and return the set of matched elements to its previous state
             .appendTo('#slideshow');
         },3000);
     </script>
