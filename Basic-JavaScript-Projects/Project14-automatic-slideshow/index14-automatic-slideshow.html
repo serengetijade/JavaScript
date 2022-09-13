@@ -67,9 +67,9 @@
 
         setInterval(function() {
             $('#slideshow > div:first')     //Starting with the first > child element "div"
-            .fadeOut(1000)                  //
+            .fadeOut(1000)                  //Fades out the selected elements
             .next()                         //Returns the next sibling element
-            .fadeIn(1000)
+            .fadeIn(1000)                   //Fades in the selected elements
             .end()                          //Ends the most recent filtering operation in the current chain, and return the set of matched elements to its previous state
             .appendTo('#slideshow');
         },3000);
