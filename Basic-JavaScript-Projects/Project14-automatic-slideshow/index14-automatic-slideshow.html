@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="../css/fileName.css" >	<!--Source CSS file-->
+	<link rel="icon" type="image/x-icon" href="../Images/Icons/">		<!--Page icon to display in browser tab-->
+	<script src="../js/jsfileName.js" defer></script> 					<!--Source JavaScript file-->
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> 	<!--Source jQuery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.js"></script>		<!--Source React-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react-dom.js"></script>	<!--Source React DOM-->
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>				<!--Source JSX-->
+	<title>JS 14 Automatic Slideshow</Title>
+	<style>
+        #slideshow {
+            position: relative;
+            margin: 50px;
+            width: 240px;
+            height: 240px;
+            padding: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+        #slideshow > div {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+        }
+        #slideshow img {
+            height: 100%;   /*these three properties scale an image to fit it's parent container*/
+            width: 100%;    /*these three properties scale an image to fit it's parent container*/
+            object-fit: cover; /*these three properties scale an image to fit it's parent container*/
+        }
+	</style>
+</head>
+<body>
+	<header>
+        <div>
+            <h1>Automatic Slideshow</h1>
+            <p><a href="https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/">Automatic Slideshow with jQuery</a></p>
+        </div>
+    </header>
+	<main>
+        <div id="slideshow">
+            <div>
+                <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZGVzc2VydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="Canolis">
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1558326567-98ae2405596b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGRlc3NlcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="Macarons">
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1593424718424-cf4d83f3def1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGRlc3NlcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="Victoria Cake">
+            </div>
+        </div>
+    </main>
+	<script>
+        //SLIDESHOW
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function() {
+            $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+        },3000);
+    </script>
+</body>
+</html>	
