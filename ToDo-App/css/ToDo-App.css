@@ -1,0 +1,86 @@
+/*GENERAL STYLING*/
+html {
+    scroll-behavior: smooth; /*specifies whether to smoothly animate the scroll position, instead of a straight jump*/
+    box-sizing: border-box;  /*include the padding and border in an element's total width and height. Default value: content-box*/
+}
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*END GENERAL STYLING*/
+
+/*HEADER*/
+<!-- Style Notes:
+header {
+    height: 400px;
+    width: 100%;        /*Ensures that the img spans the entire div*/
+}
+header table{
+    margin: 0 auto;
+    padding: 0 20px;
+    width: fit-content;   
+    border: 3px dashed gray;
+    border-radius: 25px;
+}
+header td:nth-of-type(1){
+    text-align: right;
+}
+header img{
+    height: 350px;       /*these three properties scale an image to fit it's parent container*/
+    object-fit: cover;  /*these three properties scale an image to fit it's parent container*/
+}
+.header {
+    color: rgb(130, 119, 162);
+}
+.header h1 {
+    font-size: 90px;
+    text-shadow: 0 0 10px rgba(191, 233, 255,1);
+    padding: 0;
+}
+/*END HEADER*/
+
+/*INPUT*/
+input {
+    padding-top: 30px;
+    width: 500px;
+    height: 60px;
+    font-size: 40px;
+    border: 0;s
+}
+input:focus {
+    outline: none;
+}
+/*END INPUT*/
+
+li {
+    text-align: left;
+    font-size: 40px;
+    list-style: none;
+    margin: 0;
+}
+li button {
+    margin: 10px;
+    padding: 5px;
+    background-color: lightgreen;
+    border-radius: 100%;
+}
+.remove {
+    padding-bottom: 5px;
+}
+
+/*FOOTER*/
+footer {
+    position: sticky;
+    bottom: 0px;
+    padding: 5px;
+    background-color: black;
+    border: 3px solid rgb(251, 196, 33);
+    color: white;
+    text-align: center;
+}
+footer a:link, footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+/*END FOOTER*/
