@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />	
+	<title>JSON Basics</Title>
+</head>
+<body>
+    <h1>Stringify</h1>
+    <p>The <a href="https://www.w3schools.com/js/js_json_stringify.asp">JSON.stringify()</a> method takes JavaScript objects and converts them to JSON strings.</p>
+    <p id="myJSONstring"></p>
+
+    <h2>Parse</h2>
+    <p>JSON.parse() takes a JSON string and converts it to a JavaScript object.</p>
+    <p id="myJSONparse"></p>
+
+    <script>
+        //Stringify()
+        var stringObjects= {flavor: "Vanilla", department: "Baked Goods", occasion: "Birthday"}
+
+        var JSONstring1 = JSON.stringify(stringObjects);
+
+        document.getElementById("myJSONstring").innerHTML = JSONstring1;
+
+        //parse()
+        var parseObjects= '{"name":"Dax", "breed":"Great Dane", "color":"White"}';
+
+        var JSONstring2 = JSON.parse(parseObjects);
+
+        document.getElementById("myJSONparse").innerHTML = JSONstring2.name + " the " + JSONstring2.breed;  //it uses the keys we created to call a value
+    </script>
+    </body>
+</html>
