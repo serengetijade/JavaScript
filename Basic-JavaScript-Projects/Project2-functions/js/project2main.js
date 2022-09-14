@@ -10,7 +10,7 @@ function My_First_Function() { //Difine a function and name it
 //</button>
 
 
-//FUNCTION ASSIGNMENT: Write a function that includes asssigning two variables and utilizes the documents.getElementById methond
+//Function that includes asssigning two variables and utilizes the documents.getElementById methond
 function buttonstuff() {
     var str= "Oh la la!";
     var more= " It did something!"
@@ -21,4 +21,8 @@ function myfunction() {
     var sentence = "I am learning";
     sentence += " a lot from this course?!"; //concatenate with +=
     document.getElementById("concatenate").innerHTML = sentence; //innerHTML modifies the content of an HTML element.
+}
+//DOUBLECLICK FUNCTION
+function dblclick() {
+    document.getElementById("doubleclick").style.backgroundColor = "red";
 }
