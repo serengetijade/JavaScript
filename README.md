@@ -14,6 +14,16 @@ This repository is for JavaScript projects and examples. Files are for learning 
     - [React Timer: a basic function to start a timer using a counter factory](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React1-counter-factory)
     - [React Responsive Like Button](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React2-like-button)
     - [React: render function]
+## [Tic Tac Toe Game](https://github.com/serengetijade/JavaScript/tree/main/TicTacToe)
+Protect your picnic from the pests before peril strikes!
+![Preview of Tic Tac Toe Game](https://github.com/serengetijade/JavaScript/blob/main/TicTacToe/images/tictactoe.jpg?raw=true)
+## [Calculator](https://github.com/serengetijade/JavaScript/tree/main/Calculator)
+Vanilla js calculator with basic functions add, subtract, divide, and multiply functions. 
+![Preview of Calculator](https://github.com/serengetijade/JavaScript/blob/main/Calculator/img/calculator.jpg?raw=true)
+## [Gorgeous Pizza Menu](https://github.com/serengetijade/JavaScript/tree/main/Gorgeous-Pizza-Menu)
+Build you perfect pie and see a responsive reciept and sales total as you do. 
+## [To Do App](https://github.com/serengetijade/JavaScript/tree/main/ToDo-App)
+Add and remove items to the list.
 
 ## REFERENCE CODE LIBRARY:
 In addition to the projects, there is a small code library that is useful for referencing basic elements and design. 
@@ -40,16 +50,6 @@ a library of introductory JavaScipt elements.
 - [Project 17: data-attribute with this](https://github.com/serengetijade/JavaScript/tree/main/Basic-JavaScript-Projects/Project17-data-attribute-this)
 - [Project 18: .some method with arrow functions](https://github.com/serengetijade/JavaScript/tree/main/Basic-JavaScript-Projects/Project18-some-method-with-arrow-functions)
 
-## [Tic Tac Toe Game](https://github.com/serengetijade/JavaScript/tree/main/TicTacToe)
-Protect your picnic from the pests before peril strikes!
-![Preview of Tic Tac Toe Game](https://github.com/serengetijade/JavaScript/blob/main/TicTacToe/images/tictactoe.jpg?raw=true)
-## [Calculator](https://github.com/serengetijade/JavaScript/tree/main/Calculator)
-Vanilla js calculator with basic functions add, subtract, divide, and multiply functions. 
-![Preview of Calculator](https://github.com/serengetijade/JavaScript/blob/main/Calculator/img/calculator.jpg?raw=true)
-## [Gorgeous Pizza Menu](https://github.com/serengetijade/JavaScript/tree/main/Gorgeous-Pizza-Menu)
-Build you perfect pie and see a responsive reciept and sales total as you do. 
-## [To Do App](https://github.com/serengetijade/JavaScript/tree/main/ToDo-App)
-Add and remove items to the list.
 
 >“Javascript is the duct tape of the Internet."
 —Charlie Campbell
