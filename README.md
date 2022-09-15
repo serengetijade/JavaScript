@@ -16,7 +16,7 @@ This repository is for JavaScript projects and examples. Files are for learning 
     - [React: render function](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React3-JSX)
 ## [Tic Tac Toe Game](https://github.com/serengetijade/JavaScript/tree/main/TicTacToe)
 Protect your picnic from the pests before peril strikes!
-![Preview of Tic Tac Toe Game](https://github.com/serengetijade/JavaScript/blob/main/TicTacToe/images/tictactoe.jpg?raw=true)
+![Preview of Tic Tac Toe Game](https://raw.githubusercontent.com/serengetijade/JavaScript/main/TicTacToe/images/tictactoe.jpg)
 ## [Calculator](https://github.com/serengetijade/JavaScript/tree/main/Calculator)
 Vanilla js calculator with basic functions add, subtract, divide, and multiply functions. 
 ![Preview of Calculator](https://github.com/serengetijade/JavaScript/blob/main/Calculator/img/calculator.jpg?raw=true)
