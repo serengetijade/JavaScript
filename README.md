@@ -42,10 +42,10 @@ a library of introductory JavaScipt elements.
 
 ## [Tic Tac Toe Game](https://github.com/serengetijade/JavaScript/tree/main/TicTacToe)
 Protect your picnic from the pests before peril strikes!
-![Preview of Tic Tac Toe Game](https://raw.githubusercontent.com/serengetijade/JavaScript/TicTacToe/main/images/tictactoe.jpg)
+![Preview of Tic Tac Toe Game](https://github.com/serengetijade/JavaScript/blob/main/TicTacToe/images/tictactoe.jpg?raw=true)
 ## [Calculator](https://github.com/serengetijade/JavaScript/tree/main/Calculator)
 Vanilla js calculator with basic functions add, subtract, divide, and multiply functions. 
-
+![Preview of Calculator](https://github.com/serengetijade/JavaScript/blob/main/Calculator/img/calculator.jpg?raw=true)
 ## [Gorgeous Pizza Menu](https://github.com/serengetijade/JavaScript/tree/main/Gorgeous-Pizza-Menu)
 Build you perfect pie and see a responsive reciept and sales total as you do. 
 ## [To Do App](https://github.com/serengetijade/JavaScript/tree/main/ToDo-App)
