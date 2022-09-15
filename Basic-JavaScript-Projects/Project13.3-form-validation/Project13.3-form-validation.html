@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="css/Project13.3-form-validation.css" >
+	<script src="js/Project13.3-form-validation.js" defer></script> 
+	<title>JS Project 2</Title>
+	<style></style>
+</head>
+<body>
+	<header></header>
+	<nav></nav>
+	<main>
+		<!--INPUT FORM VALIDATION-->
+		<div class="input-container">
+			<div class="input-text">
+				<h1>Basic Contact Form</h1>
+				<h3>Please enter your information below:</h3>
+				<div class="input-form">
+					<form name="formName" action="" onsubmit="return validateForm()" method="post"> <!--name specifies the name of the element. action specifies where to send the form data. method specifies the HTTP method to use when spending form-data-->
+						<input class="input-line" type="text" name="First Name" value="" placeholder="First Name"> <!--the initial value of the input is null-->
+						<br><input class="input-line" type="text" name="Last Name" value="" placeholder="Last Name" >
+						<br><input class="input-line" type="email" name="Email" value="" placeholder="Email"> 					
+						<br><input class="input-line" type="password" name="Password" value="" placeholder="Password" required> <!--required performs form validation automatically by the browser but doesn't allow as much/any customization-->						
+						<div class="input-submit">
+							<input type="submit" value="Submit"> <!--The submit button must be within the <form> element or the function validateForm() will not work properly-->
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<br>
+		<!--END INPUT FORM VALIDATION-->
+	</main>
+	<footer></footer>
+</body>
+</html>

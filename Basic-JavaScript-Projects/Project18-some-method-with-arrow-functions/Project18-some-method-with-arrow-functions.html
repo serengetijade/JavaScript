@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="js/Project18-some-method-with-arrow-functions.js" defer></script> 
+	<title>Arrow Functions</Title>
+	<style></style>
+</head>
+<body>
+	<header></header>
+	<nav></nav>
+	<main>
+	<!--ARROW FUNCTIONS-->
+    <div>
+        <h2>Arrow Functions</h2>
+        <p><a href="https://www.w3schools.com/js/js_arrow_function.asp">Arrow functions</a> allow programmers to write shroter function syntax.</p>
+        <p>Arrow functions are written:
+            <br>myArrowFunction = () => "This is my arrow function.";
+            <br>Syntax: functionName = (parameters) => statement;
+        </p>
+        <p>Or they can pass a variable:
+            <br><span id="displayCar">&nbsp;</span>
+        </p>
+        <script>
+            //pass a variable
+            var car;
+            car = (val) => "These are my favorite car brands: " + val;
+            document.getElementById("displayCar").innerHTML = car("Honda, Ford, and Nissan");
+        </script>
+    </div>    
+    <!--END ARROW FUNCTIONS-->
+
+    <!--ARRAY .SOME METHOD-->
+    <div>
+        <h2>Array .some Method</h2>
+        <p>The Array.some() method checks if any of the elements in an array pass a test (provided as a function).</p>
+        <p id="displayAge">&nbsp;</p>
+        <button onclick="myAgeFunction()">Click here</button>
+    </div>
+    <div>
+        <h3>What is a yummy candy?</h3>
+        <input id="candyChoice" type="text" value="" placeholder="Enter your candy of choice here" style="text-transform:lowercase; width:250px;" />
+        <input type="submit" value="Submit" onclick="someResult()">
+        <p id="candyOutput">&nbsp;</p>
+    </div>
+        <!--END ARRAY .SOME METHOD-->
+	</main>
+	<footer></footer>
+</body>
+</html>
