@@ -13,7 +13,7 @@ This repository is for JavaScript projects and examples. Files are for learning 
 - [Intro to React]
     - [React Timer: a basic function to start a timer using a counter factory](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React1-counter-factory)
     - [React Responsive Like Button](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React2-like-button)
-    - [React: render function]
+    - [React: render function](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React3-JSX)
 ## [Tic Tac Toe Game](https://github.com/serengetijade/JavaScript/tree/main/TicTacToe)
 Protect your picnic from the pests before peril strikes!
 ![Preview of Tic Tac Toe Game](https://github.com/serengetijade/JavaScript/blob/main/TicTacToe/images/tictactoe.jpg?raw=true)
