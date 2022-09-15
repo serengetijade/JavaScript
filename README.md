@@ -24,7 +24,7 @@ Vanilla js calculator with basic functions add, subtract, divide, and multiply f
 Build you perfect pie and see a responsive reciept and sales total as you do. 
 ## [To Do App](https://github.com/serengetijade/JavaScript/tree/main/ToDo-App)
 Add and remove items to the list.
-![Preview of To Do App](https://github.com/serengetijade/JavaScript/blob/main/Calculator/img/calculator.jpg?raw=truehttps://github.com/serengetijade/JavaScript/blob/main/ToDo-App/img/ToDoApp.jpg?raw=true)
+![Preview of To Do App](https://github.com/serengetijade/JavaScript/blob/main/ToDo-App/img/ToDoApp.jpg?raw=true)
 
 ## REFERENCE CODE LIBRARY:
 In addition to the projects, there is a small code library that is useful for referencing basic elements and design. 
