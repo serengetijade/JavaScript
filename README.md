@@ -10,7 +10,7 @@ This repository is for JavaScript projects and examples. Files are for learning 
 - [To Do App](https://github.com/serengetijade/JavaScript/tree/main/ToDo-App) A basic interactive to do checklist- add items to the list and remove them once completed.
 - [Reference Code](https://github.com/serengetijade/JavaScript) Basic JavaScript Examples that are heavily noted for quick referral and deployment.
 - [Intro to Ajax](https://github.com/serengetijade/JavaScript/tree/main/AJAX/AJAX1-BasicRequestResponse)
-- Intro to React
+- [Intro to React](https://github.com/serengetijade/JavaScript/tree/main/React_Projects)
     - [React Timer](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React1-counter-factory) Start a timer using a counter factory
     - [React Responsive Like Button](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React2-like-button)
     - [React Render function](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React3-JSX)
