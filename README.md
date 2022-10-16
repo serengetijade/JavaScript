@@ -4,16 +4,16 @@
 This repository is for JavaScript projects and examples. Files are for learning and illustrative purposes with minimal css and other customization in order to keep the code as readable as possible. 
 
 ## PROJECTS:
-- [Tic Tac Toe Game: A simple game with css styling and javaScript](https://github.com/serengetijade/JavaScript/tree/main/TicTacToe)
-- [Calculator: A basic HTML, CSS, and JavaScript Calculator](https://github.com/serengetijade/JavaScript/tree/main/Calculator)
-- [Gorgeous Pizza Menu: An interactive menu that tallys your selections](https://github.com/serengetijade/JavaScript/tree/main/Gorgeous-Pizza-Menu)
-- [To Do App: a basic interactive to do checklist](https://github.com/serengetijade/JavaScript/tree/main/ToDo-App)
-- [Reference Code: Basic JavaScript Examples](https://github.com/serengetijade/JavaScript)
+- [Tic Tac Toe Game](https://github.com/serengetijade/JavaScript/tree/main/TicTacToe) A simple game with css styling and javaScript
+- [Calculator](https://github.com/serengetijade/JavaScript/tree/main/Calculator) A basic HTML, CSS, and JavaScript Calculator
+- [Gorgeous Pizza Menu](https://github.com/serengetijade/JavaScript/tree/main/Gorgeous-Pizza-Menu) An interactive menu that tallys your selections
+- [To Do App](https://github.com/serengetijade/JavaScript/tree/main/ToDo-App) A basic interactive to do checklist- add items to the list and remove them once completed.
+- [Reference Code](https://github.com/serengetijade/JavaScript) Basic JavaScript Examples that are heavily noted for quick referral and deployment.
 - [Intro to Ajax](https://github.com/serengetijade/JavaScript/tree/main/AJAX/AJAX1-BasicRequestResponse)
 - Intro to React
-    - [React Timer: a basic function to start a timer using a counter factory](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React1-counter-factory)
+    - [React Timer](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React1-counter-factory) Start a timer using a counter factory
     - [React Responsive Like Button](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React2-like-button)
-    - [React: render function](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React3-JSX)
+    - [React Render function](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React3-JSX)
 ## [Tic Tac Toe Game](https://github.com/serengetijade/JavaScript/tree/main/TicTacToe)
 Protect your picnic from the pests before peril strikes!
 ![Preview of Tic Tac Toe Game](https://raw.githubusercontent.com/serengetijade/JavaScript/main/TicTacToe/images/tictactoe.jpg)
