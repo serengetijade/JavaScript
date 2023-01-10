@@ -19,18 +19,17 @@
         const X = React.createElement;
 
         class likeButton extends React.Component {
-            constructor(props) {
-                super(props);
+            constructor(props) {        //A constructor creates an object within a class //Props are passed to components via HTML attributes
+                super(props);           //“Super” calls a constructor
                 this.state = { liked: false };
             }
             render() {
                 if (this.state.liked) {
                     return 'You clicked the like button!';
                 }
-
                 return X (
                     'button',
-                    { onClick: () => this.setState({ liked: true }) },
+                    { onClick: () => this.setState({ liked: true }) },      //“setstate” schedules a UI update
                     'Like'
                 );
             }

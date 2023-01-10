@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width" />
 	<link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png">		<!--Page icon to display in browser tab-->
-    <script src="react.js" defer></script>
-    <script src="react-dom.js" defer></script>
+    <script src="C:\Users\jad24\Documents\Coding Projects\React\react.js" defer></script>
+    <script src="C:\Users\jad24\Documents\Coding Projects\React\react-dom.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react-dom.js"></script>
 	<title>React 1</Title>
@@ -16,9 +16,9 @@
         <div id="My_React_Code"></div>
     </main>
     <script>
-        var Counter = React.createClass({    //create a component- a class called Counter    
-            render: function() {
-                var time_Passed = Math.round(this.props.time_Passed / 100);             //this=the object that possesses the function
+        var Counter = React.createClass({   //create a component- a class called Counter. This is an instance of the React class. Everything within the curly braces belongs to this instance 'counter'.
+            render: function() {            //render is an existing function of the React class. It has several versions that differ depending on what you use it on.
+                var time_Passed = Math.round(this.props.time_Passed / 100);             //this=the object that possesses the function //props are properties within React components
                 var seconds_Passed = time_Passed / 10 + (time_Passed % 10 ? '' : '.0'); //? – a conditional operator that checks for whether or not a condition is true, the : following it is shorthand for “else”
                 var text = 'My React code started running ' +                           //instantiate a string
                     seconds_Passed + ' seconds ago!';
@@ -27,10 +27,10 @@
         });
 
         var counter_Factory = React.createFactory(Counter); //a function to generate a Factory (an object that creates an object)
-
         var start_Counting = new Date().getTime();
+
         setInterval(function() {    //a method that evaluates an expression at specified intervals (milliseconds)
-            ReactDOM.render(
+            ReactDOM.render(        //Built in function to render to the document
                 counter_Factory({time_Passed: new Date().getTime() - start_Counting}),
                 document.getElementById('My_React_Code')
             );
