@@ -37,10 +37,10 @@ https://github.com/serengetijade/JavaScript/blob/49e75dcb5ed45b87922736ff61fe3be
 
 ## Nested components and Directives
 As mentioned earlier, the starRating component was created as a shared component. To establish the connection between the starRating component and the container component, the starRating's selector was used as a directive.
-https://github.com/serengetijade/JavaScript/blob/49e75dcb5ed45b87922736ff61fe3be171e3bb42/Angular-WebApp-Project/src/app/products/productService.ts#L39-L51
+https://github.com/serengetijade/JavaScript/blob/e11dc50bbd70f9879cceaac689270748ff5cbad0/Angular-WebApp-Project/src/app/products/productListComponent.html#L51
 
 ## Event Binding
-The starRating directive, shown above, also demonstrates an example of event binding. This function was added to show how event binding can be used to respond to user evetns, such as clicks.
+The starRating directive, shown above, is also an example of event binding. This function was added to show how event binding can be used to respond to user evetns, such as clicks.
 https://github.com/serengetijade/JavaScript/blob/49e75dcb5ed45b87922736ff61fe3be171e3bb42/Angular-WebApp-Project/src/app/products/productListComponent.ts#L66-L71
 
 https://github.com/serengetijade/JavaScript/blob/49e75dcb5ed45b87922736ff61fe3be171e3bb42/Angular-WebApp-Project/src/app/shared/startComponent.ts#L8-L22
