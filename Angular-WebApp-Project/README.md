@@ -61,4 +61,5 @@ https://github.com/serengetijade/JavaScript/blob/49e75dcb5ed45b87922736ff61fe3be
 
 Property binding was used extensively throughout the project and appears in multiple documents. 
 
-## Pipes
+## Credit
+This projects was based off a tutorial by [Deborah Kurata](https://app.pluralsight.com/library/courses/angular-2-getting-started-update/table-of-contents)
