@@ -15,7 +15,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - <b>CLI:</b>The command line interface was used to efficiently generate components and modules.
 
 # Code Summary
-![Angular_Demo](https://github.com/serengetijade/JavaScript/blob/main/Angular-WebApp-Project/src/assets/images/AngularDemo.gif)
+![Angular_Demo](https://github.com/serengetijade/JavaScript/blob/main/Angular-WebApp-Project/src/assets/readmeImages/AngularDemo.gif)
 
 ## Objects, Components, Shared Components, and Modules
 Classes were created to represent the various objects used in this application: mainly "products". Properties were defined in order to track the name, price, availability, etc of each product. 
@@ -33,7 +33,7 @@ https://github.com/serengetijade/JavaScript/blob/49e75dcb5ed45b87922736ff61fe3be
 As part of the modularization, the logic to get the list of products is included in the products module. The getProducts method uses HTTP get requests to access a json file that contains the complete string of product objects. The getProduct method uses a pipe to get a specific product from the list and map its data to be used when rendering the productDetails template. 
 https://github.com/serengetijade/JavaScript/blob/49e75dcb5ed45b87922736ff61fe3be171e3bb42/Angular-WebApp-Project/src/app/products/productService.ts#L16-L37
 
-![Product_Details1](https://github.com/serengetijade/JavaScript/blob/main/Angular-WebApp-Project/src/assets/images/ProductDetails.jpg)
+![Product_Details1](https://github.com/serengetijade/JavaScript/blob/main/Angular-WebApp-Project/src/assets/readmeImages/ProductDetails.jpg)
 
 ## Error handling
 Should an error occur when making the http requests, an error respons was added to redirect to the welcome page.
