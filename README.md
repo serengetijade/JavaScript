@@ -14,6 +14,8 @@ This repository is for JavaScript projects and examples. Files are for learning 
     - [React Timer](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React1-counter-factory) Start a timer using a counter factory
     - [React Responsive Like Button](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React2-like-button)
     - [React Render function](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React3-JSX)
+- [Angular Product Application]() A web app that displays a list of products, toggles the display of product images, shows product ratings in stars, and includes a search filter that asynchronously returns matching results. This project applies the concepts of templates, arrow functions, interpolation, directives, databinding and pipes, nested components, dependency injection, backend logic using Http, navigation and routing, and angular modules. 
+
 ## [Tic Tac Toe Game](https://github.com/serengetijade/JavaScript/tree/main/TicTacToe)
 Protect your picnic from the pests before peril strikes!
 ![Preview of Tic Tac Toe Game](https://raw.githubusercontent.com/serengetijade/JavaScript/main/TicTacToe/images/tictactoe.jpg)
@@ -26,10 +28,8 @@ Build you perfect pie and see a responsive reciept and sales total as you do.
 Add and remove items to the list.
 ![Preview of To Do App](https://github.com/serengetijade/JavaScript/blob/main/ToDo-App/img/ToDoApp.jpg?raw=true)
 
-## REFERENCE CODE LIBRARY:
+## REFERENCE CODE LIBRARY (https://github.com/serengetijade/JavaScript):
 In addition to the projects, there is a small code library that is useful for referencing basic elements and design. 
-#### [Basic JavaScript](https://github.com/serengetijade/JavaScript)
-a library of introductory JavaScipt elements. 
 - [Project 1: alerts](https://github.com/serengetijade/JavaScript/tree/main/Basic-JavaScript-Projects/Project1-expressions-alert)
 - [Project 2: basic functions](https://github.com/serengetijade/JavaScript/tree/main/Basic-JavaScript-Projects/Project2-functions)
 - [Project 3: math operators](https://github.com/serengetijade/JavaScript/tree/main/Basic-JavaScript-Projects/Project3-math-operators)
@@ -50,7 +50,7 @@ a library of introductory JavaScipt elements.
 - [Project 16: HTML canvas element](https://github.com/serengetijade/JavaScript/tree/main/Basic-JavaScript-Projects/Project16-HTML-canvas)
 - [Project 17: data-attribute with this](https://github.com/serengetijade/JavaScript/tree/main/Basic-JavaScript-Projects/Project17-data-attribute-this)
 - [Project 18: .some method with arrow functions](https://github.com/serengetijade/JavaScript/tree/main/Basic-JavaScript-Projects/Project18-some-method-with-arrow-functions)
-
+- [TypeScript](https://github.com/serengetijade/JavaScript/tree/main/TypeScript)
 
 >“Javascript is the duct tape of the Internet."
 —Charlie Campbell
