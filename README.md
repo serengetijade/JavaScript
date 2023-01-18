@@ -8,13 +8,13 @@ This repository is for JavaScript projects and examples. Files are for learning 
 - [Calculator](https://github.com/serengetijade/JavaScript/tree/main/Calculator) A basic HTML, CSS, and JavaScript Calculator
 - [Gorgeous Pizza Menu](https://github.com/serengetijade/JavaScript/tree/main/Gorgeous-Pizza-Menu) An interactive menu that tallys your selections
 - [To Do App](https://github.com/serengetijade/JavaScript/tree/main/ToDo-App) A basic interactive to do checklist- add items to the list and remove them once completed.
-- [Reference Code](https://github.com/serengetijade/JavaScript) Basic JavaScript Examples that are heavily noted for quick referral and deployment.
 - [Intro to Ajax](https://github.com/serengetijade/JavaScript/tree/main/AJAX/AJAX1-BasicRequestResponse)
 - [Intro to React](https://github.com/serengetijade/JavaScript/tree/main/React_Projects)
     - [React Timer](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React1-counter-factory) Start a timer using a counter factory
     - [React Responsive Like Button](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React2-like-button)
     - [React Render function](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React3-JSX)
-- [Angular Product Application]() A web app that displays a list of products, toggles the display of product images, shows product ratings in stars, and includes a search filter that asynchronously returns matching results. This project applies the concepts of templates, arrow functions, interpolation, directives, databinding and pipes, nested components, dependency injection, backend logic using Http, navigation and routing, and angular modules. 
+- [Angular Web Application](https://github.com/serengetijade/Project_Angular_WebApp) A web app that displays a list of products, toggles the display of product images, shows product ratings in stars, and includes a search filter that asynchronously returns matching results. This project applies the concepts of templates, arrow functions, interpolation, directives, databinding and pipes, nested components, dependency injection, backend logic using Http, navigation and routing, and angular modules. 
+- [Reference Code](https://github.com/serengetijade/JavaScript) Basic JavaScript Examples that are heavily noted for quick referral and deployment.
 
 ## [Tic Tac Toe Game](https://github.com/serengetijade/JavaScript/tree/main/TicTacToe)
 Protect your picnic from the pests before peril strikes!
@@ -27,6 +27,9 @@ Build you perfect pie and see a responsive reciept and sales total as you do.
 ## [To Do App](https://github.com/serengetijade/JavaScript/tree/main/ToDo-App)
 Add and remove items to the list.
 ![Preview of To Do App](https://github.com/serengetijade/JavaScript/blob/main/ToDo-App/img/ToDoApp.jpg?raw=true)
+## [Angular Web Application](https://github.com/serengetijade/Project_Angular_WebApp) 
+Angular is an open-source web application framework that is useful for adding object-oriented functionality to applications. This project shows a basic web app for displaying  and navigating a list of products. It is meant to highlight back end logic, so styling is minimal. Please visit my [Project_Angular_WebApp Repository](https://github.com/serengetijade/Project_Angular_WebApp) for more information about this project and its code summary.   
+![Angular_Demo](https://github.com/serengetijade/Project_Angular_WebApp/blob/main/src/assets/readmeImages/AngularDemo.gif)
 
 ## REFERENCE CODE LIBRARY (https://github.com/serengetijade/JavaScript):
 In addition to the projects, there is a small code library that is useful for referencing basic elements and design. 
