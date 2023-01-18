@@ -1,5 +1,5 @@
 # Project_Angular_Website
-Angular is an open-source web application framework that is useful for adding object-oriented functionality to applications. This project shows a basic web app for dipsplaying and navigating a list of products. It is meant to highlight back end logic, so styling is minimal. 
+Angular is an open-source web application framework that is useful for adding object-oriented functionality to applications. This project shows a basic web app for displaying  and navigating a list of products. It is meant to highlight back end logic, so styling is minimal. 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
 
 ## Skills Implemented
@@ -22,7 +22,7 @@ Classes were created to represent the various objects used in this application: 
 
 Components were added to provide a template for the object, any methods needed, and the required metadata. For example, the [productListComponent](https://github.com/serengetijade/JavaScript/blob/main/Angular-WebApp-Project/src/app/products/productListComponent.ts) was created to display the entire list of available products, as well as handle various user actions. 
 
-In order to organize the application, objects and componenets were arranged into modules. Each module was assigned the relevant imports and declarations so as to keep things organized. For shared modules, such as the starRating component, exports were added to share that modules componenets, directives, and/or pipes with other modules. 
+In order to organize the application, objects and components were arranged into modules. Each module was assigned the relevant imports and declarations so as to keep things organized. For shared modules, such as the starRating component, exports were added to share that modules components , directives, and/or pipes with other modules. 
 https://github.com/serengetijade/JavaScript/blob/49e75dcb5ed45b87922736ff61fe3be171e3bb42/Angular-WebApp-Project/src/app/shared/shared.module.ts#L6-L11
 
 ## Life cycle hooks
@@ -33,10 +33,10 @@ https://github.com/serengetijade/JavaScript/blob/49e75dcb5ed45b87922736ff61fe3be
 As part of the modularization, the logic to get the list of products is included in the products module. The getProducts method uses HTTP get requests to access a json file that contains the complete string of product objects. The getProduct method uses a pipe to get a specific product from the list and map its data to be used when rendering the productDetails template. 
 https://github.com/serengetijade/JavaScript/blob/49e75dcb5ed45b87922736ff61fe3be171e3bb42/Angular-WebApp-Project/src/app/products/productService.ts#L16-L37
 
-![Product_Details1](https://github.com/serengetijade/JavaScript/blob/main/Angular-WebApp-Project/src/assets/readmeImages/ProductDetails.jpg)
+![Product_Details](https://github.com/serengetijade/JavaScript/blob/main/Angular-WebApp-Project/src/assets/readmeImages/ProductDetails.jpg)
 
 ## Error handling
-Should an error occur when making the http requests, an error respons was added to redirect to the welcome page.
+Should an error occur when making the http requests, an error response was added to redirect to the welcome page.
 https://github.com/serengetijade/JavaScript/blob/49e75dcb5ed45b87922736ff61fe3be171e3bb42/Angular-WebApp-Project/src/app/products/productService.ts#L39-L51
 
 ## Nested components and Directives
@@ -44,10 +44,11 @@ As mentioned earlier, the starRating component was created as a shared component
 https://github.com/serengetijade/JavaScript/blob/e11dc50bbd70f9879cceaac689270748ff5cbad0/Angular-WebApp-Project/src/app/products/productListComponent.html#L51
 
 ## Event Binding
-The starRating directive, shown above, is also an example of event binding. This function was added to show how event binding can be used to respond to user evetns, such as clicks.
+The starRating directive, shown above, is also an example of event binding. This function was added to show how event binding can be used to respond to user events, such as clicks.
 https://github.com/serengetijade/JavaScript/blob/49e75dcb5ed45b87922736ff61fe3be171e3bb42/Angular-WebApp-Project/src/app/products/productListComponent.ts#L66-L71
 
 https://github.com/serengetijade/JavaScript/blob/49e75dcb5ed45b87922736ff61fe3be171e3bb42/Angular-WebApp-Project/src/app/shared/startComponent.ts#L8-L22
+![Event_Binding](https://github.com/serengetijade/JavaScript/blob/main/Angular-WebApp-Project/src/assets/readmeImages/EventDemo.gif)
 
 ## Filter using Two-Way Binding and Property Binding
 A filter bar was added and two way binding was implemented to display a component property in the template and update that property as the user types. 
