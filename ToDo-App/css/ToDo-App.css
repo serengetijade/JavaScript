@@ -53,6 +53,7 @@ input:focus {
 }
 /*END INPUT*/
 
+/*TODOs LIST*/
 li {
     text-align: left;
     font-size: 40px;
@@ -67,7 +68,9 @@ li button {
 }
 .remove {
     padding-bottom: 5px;
+    vertical-align: middle;
 }
+/*END TODOs LIST*/
 
 /*FOOTER*/
 footer {
