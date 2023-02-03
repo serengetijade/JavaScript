@@ -76,15 +76,15 @@
 	</main>
 	<!--JavaScript-->
 	<script>
+		//Simple JS:
 		// function openForm() {
 		// 	document.getElementById("outerFormContainer").style.display = "block";
 		// }
-
 		// function closeForm() {
 		// 	document.getElementById("outerFormContainer").style.display = "none";
 		// }
 
-		//Instead of using an OPEN and Close function, JQuery has a toggle that changes the display of the named element
+		//JQuery: Instead of using an OPEN and Close function, JQuery has a toggle that changes the display of the named element:
 		function toggleForm(id) {
 			$("#outerFormContainer").toggle();
 		}
@@ -92,6 +92,7 @@
 		//window.moveTo(50%, 50%);
 		
 		//CLOSE CONTACT FORM IF USER CLICKS OUTSIDE THE CONTACT-CONTAINER WINDOW
+		//Note that in order for this to work, the parent element of the modal (#outerFormContainer) must be set to 100% H and W
 		document.addEventListener("click", function(event){
 			if ( event.target.matches("#outerFormContainer")) 
 				{toggleForm();}
