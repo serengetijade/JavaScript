@@ -20,7 +20,7 @@
             padding: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
         }
-        #slideshow > div {
+        #slideshow > div {   /*">" indicates a child element*/
             position: absolute;
             top: 10px;
             left: 10px;
@@ -58,12 +58,11 @@
             <div class="slideshowtext">
                 Order TODAY!
             </div>
-        </div> <!--You can include more than just images, such as text-->
+        </div> <!--It is possible to include more than just images, such as text-->
     </main>
 	<script>
         //SLIDESHOW
-        $("#slideshow > div:gt(0)").hide(); // 
-        ">" indicates a child element of "#slideshow"; :gt is a selector with an index number or higher(starting at (n))
+        $("#slideshow > div:gt(0)").hide(); //">" indicates a child element of "#slideshow"; :gt is a selector with an index number or higher(starting at (n))
 
         setInterval(function() {
             $('#slideshow > div:first')     //Starting with the first > child element "div"
