@@ -1,4 +1,7 @@
 /*INPUT FORM VALIDATION*/
+:root {
+    --color1: burlywood;
+}
 .input-container {
     margin: 0 auto; /*center the element*/
     padding: 25px;  /*add spacing between the outside edge and the contents*/
@@ -18,7 +21,7 @@
     padding: 5px;
     border-radius: 10px;
     width: 75%;
-    box-shadow: inset -3px -3px 5px burlywood;
+    box-shadow: inset -3px -3px 5px var(--color1);
 }
 .input-form .input-line:hover {
     background-color: rgba(0,0,0,.05);
@@ -27,10 +30,10 @@
 }
 .input-form .input-submit input{
     border-radius: 10px;
-    box-shadow: inset -3px -3px 5px burlywood;
+    box-shadow: inset -3px -3px 5px var(--color1);
 }
 .input-form .input-submit input:hover{
-    background-color: burlywood;
+    background-color: var(--color1);
     box-shadow: inset 3px 3px 5px ivory;
 }
 /*END INPUT FORM VALIDATION*/

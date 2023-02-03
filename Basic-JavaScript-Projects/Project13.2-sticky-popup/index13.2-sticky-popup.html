@@ -30,26 +30,28 @@
 		<div id="sticky1">
 			<p>Sign up for our mailing list to recieve amazing content and deals:
 				<!--OPEN BUTTON-->			
-				<button class="open-button" onclick="openForm()">Open Form</button>
+				<button class="open-button" onclick="toggleForm()">Open Form</button>
 			</p>
 		</div>
 		<!--END STICKY ELEMENT 1-->
 
 		<!--POPUP FORM-->
-		<div class="form-popup" id="popupForm">
-			<!--FORM CONTAINER-->
-			<form name="" action="" class="form-container">
-				<h1>Form Title</h1>
-				<input name="username" type="text" placeholder="Enter Username">
-				<br>
-				<input name="email" type="email" placeholder="Enter Email">
-				<br>
-				<input name="password" type="password" placeholder="Enter Password">
-				<br>
-				<!--SUBMIT/LOGIN BUTTON-->
-				<button type="submit" class="btn">Login</button>
-				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>					
-			</form>
+		<div id="outerFormContainer">
+			<div class="form-popup" id="popupForm">
+				<!--FORM CONTAINER-->
+				<form name="" action="" class="form-container">
+					<h1>Form Title</h1>
+					<input name="username" type="text" placeholder="Enter Username">
+					<br>
+					<input name="email" type="email" placeholder="Enter Email">
+					<br>
+					<input name="password" type="password" placeholder="Enter Password">
+					<br>
+					<!--SUBMIT/LOGIN BUTTON-->
+					<button type="submit" class="btn">Login</button>
+					<button type="button" class="btn cancel" id="closeFormBtn" onclick="toggleForm()">Close</button>					
+				</form>
+			</div>
 		</div>
 		<!--END POPUP FORM-->
 
@@ -68,22 +70,37 @@
 		
 		<!--STICKY ELEMENT 2-->
 		<div id="sticky2">
-			<button class="open-button" onclick="openForm()">Open Form</button>			
+			<button class="open-button" onclick="toggleForm()">Open Form</button>			
 		</div>
 		<!--END STICKY ELEMENT 2-->
 	</main>
 	<!--JavaScript-->
 	<script>
-		function openForm() {
-			document.getElementById("popupForm").style.display = "block";
-		}
+		// function openForm() {
+		// 	document.getElementById("outerFormContainer").style.display = "block";
+		// }
 
-		function closeForm() {
-			document.getElementById("popupForm").style.display = "none";
+		// function closeForm() {
+		// 	document.getElementById("outerFormContainer").style.display = "none";
+		// }
+
+		//Instead of using an OPEN and Close function, JQuery has a toggle that changes the display of the named element
+		function toggleForm(id) {
+			$("#outerFormContainer").toggle();
 		}
 
 		//window.moveTo(50%, 50%);
-
+		
+		//CLOSE CONTACT FORM IF USER CLICKS OUTSIDE THE CONTACT-CONTAINER WINDOW
+		document.addEventListener("click", function(event){
+			if ( event.target.matches("#outerFormContainer")) 
+				{toggleForm();}
+			}
+		);
+		//Use for debugging to see where user clicks on page:
+		// document.addEventListener("click", function(event) {
+		// 	console.log(event.target);
+		// })
 	</script>
 </body>
 </html>	
