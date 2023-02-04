@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> 	<!--Source jQuery-->
+	<title>HTML Template</Title>
+	<style>
+		html {
+			scroll-behavior: smooth; /*specifies whether to smoothly animate the scroll position, instead of a straight jump*/
+			box-sizing: border-box;  /*include the padding and border in an element's total width and height. Default value: content-box*/
+		}
+		body{
+            /*margin: 0; Remove the default margin around body-level elements, allow any banner to span entire vw*/
+        }
+        /*Use CSS to trigger sytle changes in the document*/
+        p:hover {
+            background-color: palegreen;
+        }
+	</style> 	<!--If not using a .css stylesheet, put style element at the top of the document-->
+</head>
+<body>
+    <main>
+        <h1>JavaScript Events</h1>
+        <p id="elementID">This paragraph element will be changed by clicking the button.</p>
+        <button type="button" onclick="eventFunction()">Click me!</button>
+        <p>Events attach JS functions to HTML elements: <a href="https://www.w3schools.com/tags/ref_eventattributes.asp">onEvent List</a></p>
+
+        <h3>Pass "this" element to the function</h3>
+        <p>For example: 
+            <input type="text" onfocus="focusFunction(this)" onblur="loseFocusFunction(this)" />
+        </p>
+
+        <h1>Event Listeners</h1>
+        <p>DOM Events allow JavaScript to add event listener or event handlers to HTML elements.
+            <br><a href="https://www.w3schools.com/jsref/dom_obj_event.asp">List of DOM events</a>
+        </p>
+        <p>Use <a href="https://www.w3schools.com/jquery/jquery_ref_events.asp">jQuery event Methods</a> to count Keypresses in the field above: <span>0</span></p>
+
+    </main>
+	<script>
+        //Call this function(s) from the html
+        function eventFunction() {
+            document.getElementById("elementID").innerHTML = "The event called a JS fuction to change the innerHTML.";
+        }
+        function focusFunction(paramPassedIn){
+            paramPassedIn.style.background = "pink";
+        }
+        function loseFocusFunction(paramPassedIn){
+            paramPassedIn.style.background = "white";
+        }
+
+        //Function called by event listener
+        function listenerFunction() {
+            alert("A double click occured somewhere in the document, which triggered an event listener.");
+        }
+
+        //Use an event listener to trigger a function
+        document.addEventListener("dblclick", listenerFunction);
+
+        //Use jQuery to listen for an event
+        i = 0;
+        $(document).ready(function(){
+        $("input").keypress(function(){     //keypress = a jQuery Event Method
+            $("span").text(i += 1);
+            });
+        });
+    </script> 
+</body>
+</html>	

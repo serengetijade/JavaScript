@@ -16,18 +16,19 @@
 
     <script>
         //Stringify()
-        var stringObjects= {flavor: "Vanilla", department: "Baked Goods", occasion: "Birthday"}
+        var stringObjects= {flavor: "Vanilla", department: "Baked Goods", occasion: "Birthday"} //This variable is a an object declaration (aka object literal)- defined within {}
 
         var JSONstring1 = JSON.stringify(stringObjects);
 
         document.getElementById("myJSONstring").innerHTML = JSONstring1;
 
         //parse()
-        var parseObjects= '{"name":"Dax", "breed":"Great Dane", "color":"White"}';
+        var parseObjects= '{"name":"Dax", "breed":"Great Dane", "color":"White"}';  //This variable is a string - defined by quote marks
 
-        var JSONstring2 = JSON.parse(parseObjects);
+        var JSONobject = JSON.parse(parseObjects); //Turn the above string/dictionary into an object
 
-        document.getElementById("myJSONparse").innerHTML = JSONstring2.name + " the " + JSONstring2.breed;  //it uses the keys we created to call a value
+        //Access the object's properties:
+        document.getElementById("myJSONparse").innerHTML = JSONobject.name + " the " + JSONobject.breed;  //it uses the keys we created to call a value
     </script>
     </body>
 </html>

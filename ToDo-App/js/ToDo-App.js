@@ -3,7 +3,7 @@ function get_todos() {
     var todos = new Array;  //instatiate an empty array
     var todos_str = localStorage.getItem('todo'); //Pull the tast that was saved in the web browser memory
     if (todos_str !== null) {   //If the input is not null, then JSON will parse comminicate with the web browser to make the task a JS object.
-        todos = JSON.parse(todos_str);  //JSON.parse turns each object in the array into a string
+        todos = JSON.parse(todos_str);  //JSON.parse turns a string into an object.
     }
     return todos;
 }
@@ -13,7 +13,7 @@ function add() {
     var task= document.getElementById('task').value; //Create a variable using the value of a 'task'
     var todos = get_todos(); 
     todos.push(task);   //Use built-in push function to add a new task to the end of the array
-    localStorage.setItem('todo', JSON.stringify(todos));    //Convert the task input to a JSON string
+    localStorage.setItem('todo', JSON.stringify(todos));    //localStorage.setItem sytnax: ('key', value); Set the value by converting the task input to a JSON string
     document.getElementById("task").value = "";
     show();             //Create an undefined function
     return false;

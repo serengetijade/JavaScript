@@ -54,6 +54,7 @@ In addition to the projects, there is a small code library that is useful for re
 - [Project 17: data-attribute with this](https://github.com/serengetijade/JavaScript/tree/main/Basic-JavaScript-Projects/Project17-data-attribute-this)
 - [Project 18: .some method with arrow functions](https://github.com/serengetijade/JavaScript/tree/main/Basic-JavaScript-Projects/Project18-some-method-with-arrow-functions)
 - [TypeScript](https://github.com/serengetijade/JavaScript/tree/main/TypeScript)
+- [Events]() 
 
 >“Javascript is the duct tape of the Internet."
 —Charlie Campbell
