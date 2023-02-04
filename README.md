@@ -14,7 +14,7 @@ This repository is for JavaScript projects and examples. Files are for learning 
     - [React Responsive Like Button](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React2-like-button)
     - [React Render function](https://github.com/serengetijade/JavaScript/tree/main/React_Projects/React3-JSX)
 - [Angular Web Application](https://github.com/serengetijade/Project_Angular_WebApp) A web app that displays a list of products, toggles the display of product images, shows product ratings in stars, and includes a search filter that asynchronously returns matching results. This project applies the concepts of templates, arrow functions, interpolation, directives, databinding and pipes, nested components, dependency injection, backend logic using Http, navigation and routing, and angular modules. 
-- [Reference Code](https://github.com/serengetijade/JavaScript) Basic JavaScript Examples that are heavily noted for quick referral and deployment.
+- [Reference Code](#reference-code-library-httpsgithubcomserengetijadejavascript) Basic JavaScript Examples that are heavily noted for quick referral and deployment.
 
 ## [Tic Tac Toe Game](https://github.com/serengetijade/JavaScript/tree/main/TicTacToe)
 Protect your picnic from the pests before peril strikes!
@@ -54,7 +54,25 @@ In addition to the projects, there is a small code library that is useful for re
 - [Project 17: data-attribute with this](https://github.com/serengetijade/JavaScript/tree/main/Basic-JavaScript-Projects/Project17-data-attribute-this)
 - [Project 18: .some method with arrow functions](https://github.com/serengetijade/JavaScript/tree/main/Basic-JavaScript-Projects/Project18-some-method-with-arrow-functions)
 - [TypeScript](https://github.com/serengetijade/JavaScript/tree/main/TypeScript)
-- [Events]() 
+- [Events](https://github.com/serengetijade/JavaScript/blob/main/Basic-JavaScript-Projects/Events.html) 
+### Node.js Reference Library
+- [API](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/API.js)
+- [Arrow Functions & Scope](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/ArrowFunction_Scope.js)
+- [Child Process & Spawn](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/ChildProcess_Spawn.js)
+- [Class Constructor](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/Class_Constructor.js)
+- [Create a server with Express](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/ExpressServer.js)
+- [Create a server with HTTP](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/CreateServer.js)
+    - [Server Basics](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/ServerBasics.js)
+- [Destructuring & restOfItems](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/Destructuring_RestArray.js)
+- [Error Handling](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/ErrorHandling.js)
+- [Objects & Properties](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/ObjectsAndProperties.js)
+- [Process & ExitEventListener](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/Process.ExitEventListener.js)
+- [Promises](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/Promise.js)
+    - [Promise Append File](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/PromiseAppendFile.js)
+    - [Promise Async Await](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/Promise_Async-Await.js)
+    - [Promisify and Promises vs Callback Nesting](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/Promisify_Promises_vs_CallbackNesting.js)
+- [Stream](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/StreamReadWrite.js)
+- [setTimeout & setInterval](https://github.com/serengetijade/JavaScript/blob/main/Node.js/BasicNodeJS/setTimeout_setInterval.js)
 
 >“Javascript is the duct tape of the Internet."
 —Charlie Campbell
